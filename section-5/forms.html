@@ -84,6 +84,20 @@
         <br>
         <textarea name="requests" id="requests" cols="30" rows="10"></textarea>
     </section>
+
+    <section>
+        <h3>Validations Demo</h3>
+        <form action="/dummy">
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+            <br>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required minlength="5" maxlength="20">
+
+
+            <button>Submit</button>
+        </form>
+    </section>
 </body>
 
 </html>
