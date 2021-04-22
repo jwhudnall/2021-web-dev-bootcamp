@@ -4,6 +4,7 @@ h1 {
 
 h2 {
     color: teal;
+    background-color: rgb(155,31,15);
 }
 
 button {
@@ -11,5 +12,5 @@ button {
 }
 
 p {
-    color: olive;
+    color: #b3ae69;
 }
