@@ -20,3 +20,20 @@ h1, h2 {
     background-color: #1d3557;
     color: #f1faee;
 }
+
+span {
+    color: #457b9d;
+}
+
+.tag {
+    background-color: darkslategray;
+    font-size: 16px;
+}
+
+.post a {
+    color: #457b9d;
+}
+
+footer a {
+    color: #e63946
+}
