@@ -1,3 +1,33 @@
 div {
     width: 200px;
+    height: 200px;
+    background-color: #e5959b;
+}
+
+h1 {
+    background-color: pink;
+    width: 100px;
+}
+
+#one {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 10% / 50%;
+}
+
+#two {
+    background-color: #b5838d;
+    border-width: 5px;
+    border-color: gray;
+    border-style: inset;
+    box-sizing: border-box; /* Makes border inclusive of DIV width specification */
+}
+
+#three {
+    background-color: #6d6875;
+    border: 4px dotted black;
+    border-left-style: solid;
 }
