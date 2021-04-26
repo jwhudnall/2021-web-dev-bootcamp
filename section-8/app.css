@@ -1,11 +1,10 @@
 div {
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
     background-color: #e5959b;
 }
 
 h1 {
-    background-color: pink;
     width: 100px;
 }
 
@@ -15,8 +14,8 @@ h1 {
     border-color: black;
     border-style: solid;
     box-sizing: border-box;
-    border-radius: 10% / 50%;
-}
+    border-radius: 10% / 20%;
+}     
 
 #two {
     background-color: #b5838d;
@@ -30,4 +29,19 @@ h1 {
     background-color: #6d6875;
     border: 4px dotted black;
     border-left-style: solid;
+}
+
+.card {
+    width: 210px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(236, 183, 191);
 }
