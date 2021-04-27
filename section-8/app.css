@@ -45,3 +45,7 @@ img {
     border-radius: 50%;
     border: 5px solid rgb(236, 183, 191);
 }
+
+button {
+    padding: 10px;
+}
