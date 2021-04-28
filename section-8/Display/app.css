@@ -1,20 +1,11 @@
-h1 {
-    background-color: palegoldenrod;
-    border: 1px solid black;
-    display: inline;
-}
-
-span {
-    background-color: paleturquoise;
-    border: 1px solid black;
-    display: block;
+section {
+    background-color: #6d6875;
+    width: 300px;
+    height: 300px;
 }
 
 div {
-    height: 200px;
-    width: 200px;
-    background-color: olivedrab;
-    border: 5px solid black;
-    display: inline-block;
-    margin: 15px;
+    background-color: #e5989b;
+    width: 50%;
+    height: 50%;
 }
