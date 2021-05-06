@@ -21,6 +21,16 @@ div {
     left: 50px;
 }
 
+#absolute {
+    position: relative;
+}
+
 #absolute #middle {
     position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+#fixed #middle {
+    position: fixed;
 }
