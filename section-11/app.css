@@ -138,3 +138,17 @@ body {
     background-color: #269aff;
     color: white;
 }
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
