@@ -67,5 +67,7 @@ body {
     width: 100%; /* 100% of parent */
     max-width: 960px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
 }
