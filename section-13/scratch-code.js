@@ -10,3 +10,6 @@ age++;
 
 // const CANNOT be changed
 const luckyNum = 26;
+
+// Booleans - "true" or "false"
+let isLoggedIn = true;
