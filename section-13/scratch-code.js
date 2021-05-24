@@ -17,3 +17,7 @@ let isLoggedIn = true;
 // Strings
 let userName = "James";
 console.log(1 + "hello"); // returns "1hello"
+
+// String Methods
+let greeting = "        hello again!!  ";
+console.log(greeting.trim().toUpperCase()); // returns "HELLO AGAIN!!"
