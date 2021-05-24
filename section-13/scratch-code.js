@@ -13,3 +13,7 @@ const luckyNum = 26;
 
 // Booleans - "true" or "false"
 let isLoggedIn = true;
+
+// Strings
+let userName = "James";
+console.log(1 + "hello"); // returns "1hello"
