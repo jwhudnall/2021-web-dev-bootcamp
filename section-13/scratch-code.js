@@ -44,3 +44,11 @@ console.log(`You bought ${qty} ${product}s.`); // "You bought 5 Artichokes."
 // null vs undefined
 let loggedInUser = null; // explicitly no value
 let loggedInUser; // undefined value
+
+// Math object and Random Integer Generation
+let step1 = Math.random(); // random decimal between 0 and 1. "0.2415"
+let step2 = step1 * 10; // "2.415"
+let step3 = Math.floor(step2); // "2"
+let step4 = step3 + 1; // "3"
+
+Math.floor(Math.random() * 10) + 1; // Single line achieving the same.
