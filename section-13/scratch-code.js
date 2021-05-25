@@ -21,3 +21,16 @@ console.log(1 + "hello"); // returns "1hello"
 // String Methods
 let greeting = "        hello again!!  ";
 console.log(greeting.trim().toUpperCase()); // returns "HELLO AGAIN!!"
+
+let tvShow = "catdog";
+console.log(tvShow.indexOf('dog')); // 3
+console.log(tvShow.indexOf('zzz')); // -1
+
+console.log(tvShow.slice(2)); // "tdog"
+console.log(tvShow.slice(2,4)); // "td"
+
+// replace ONLY replaces FIRST occurrence
+let annoyingLaugh = "teehee so funny! teehee!";
+console.log(annoyingLaugh.replace('teehee', 'haha')); // "haha so funny! teehee!"
+
+console.log("lol".repeat(3)); // "lollollol"
