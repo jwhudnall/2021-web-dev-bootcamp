@@ -34,3 +34,9 @@ let annoyingLaugh = "teehee so funny! teehee!";
 console.log(annoyingLaugh.replace('teehee', 'haha')); // "haha so funny! teehee!"
 
 console.log("lol".repeat(3)); // "lollollol"
+
+// Template Literals
+let product = "Artichoke";
+let price = 2.25;
+let qty = 5;
+console.log(`You bought ${qty} ${product}s.`); // "You bought 5 Artichokes."
