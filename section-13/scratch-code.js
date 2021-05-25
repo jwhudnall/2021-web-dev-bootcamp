@@ -40,3 +40,7 @@ let product = "Artichoke";
 let price = 2.25;
 let qty = 5;
 console.log(`You bought ${qty} ${product}s.`); // "You bought 5 Artichokes."
+
+// null vs undefined
+let loggedInUser = null; // explicitly no value
+let loggedInUser; // undefined value
