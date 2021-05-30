@@ -66,13 +66,13 @@ Section 59: YelpCamp: Deploying -->
 <table class="tftable" border="1">
         <tr><td>Section 1: Course Orientation</td><td>Section 12: CSS Frameworks: Bootstrap</td><td>Row:1 Cell:3</td><td>Row:1 Cell:4</td><td>Row:1 Cell:5</td></tr>
         <tr><td>Section 2: An Introduction to Web Development</td><td>Section 13: OPTIONAL Museum Of Candy Project</td><td>Row:2 Cell:3</td><td>Row:2 Cell:4</td><td>Row:2 Cell:5</td></tr>
-        <tr><td>Section 3: HTML: The Essentials</td><td>Row:3 Cell:2</td><td>Section 14: JavaScript Basics!</td><td>Row:3 Cell:4</td><td>Row:3 Cell:5</td></tr>
-        <tr><td>Section 4: HTML: Next Steps & Semantics</td><td>Row:4 Cell:2</td><td>Row:4 Cell:3</td><td>Row:4 Cell:4</td><td>Row:4 Cell:5</td></tr>
-        <tr><td>Section 5: HTML: Forms & Tables</td><td>Row:5 Cell:2</td><td>Row:5 Cell:3</td><td>Row:5 Cell:4</td><td>Row:5 Cell:5</td></tr>
-        <tr><td>Section 6: CSS: The Very Basics</td><td>Row:6 Cell:2</td><td>Row:6 Cell:3</td><td>Row:6 Cell:4</td><td>Row:6 Cell:5</td></tr>
-        <tr><td>Section 7: The World of CSS Selectors</td><td>Row:7 Cell:2</td><td>Row:7 Cell:3</td><td>Row:7 Cell:4</td><td>Row:7 Cell:5</td></tr>
-        <tr><td>Section 8: The CSS Box Model/td><td>Row:8 Cell:2</td><td>Row:8 Cell:3</td><td>Row:8 Cell:4</td><td>Row:8 Cell:5</td></tr>
-        <tr><td>Section 9: Other Assorted Useful CSS Properties</td><td>Row:9 Cell:2</td><td>Row:9 Cell:3</td><td>Row:9 Cell:4</td><td>Row:9 Cell:5</td></tr>
+        <tr><td>Section 3: HTML: The Essentials</td><td>Section 14: Javascript Basics!</td><td>Section 14: JavaScript Basics!</td><td>Row:3 Cell:4</td><td>Row:3 Cell:5</td></tr>
+        <tr><td>Section 4: HTML: Next Steps & Semantics</td><td>Section 15: JS Strings and More</td><td>Row:4 Cell:3</td><td>Row:4 Cell:4</td><td>Row:4 Cell:5</td></tr>
+        <tr><td>Section 5: HTML: Forms & Tables</td><td>Section 16: JS Decision Making</td><td>Row:5 Cell:3</td><td>Row:5 Cell:4</td><td>Row:5 Cell:5</td></tr>
+        <tr><td>Section 6: CSS: The Very Basics</td><td>Section 17: JS Arrays</td><td>Row:6 Cell:3</td><td>Row:6 Cell:4</td><td>Row:6 Cell:5</td></tr>
+        <tr><td>Section 7: The World of CSS Selectors</td><td>Section 18: JS Object Literals</td><td>Row:7 Cell:3</td><td>Row:7 Cell:4</td><td>Row:7 Cell:5</td></tr>
+        <tr><td>Section 8: The CSS Box Model/td><td>Section 19: Repeating Stuff with Loops</td><td>Row:8 Cell:3</td><td>Row:8 Cell:4</td><td>Row:8 Cell:5</td></tr>
+        <tr><td>Section 9: Other Assorted Useful CSS Properties</td><td>Section 20: Introducing Functions</td><td>Row:9 Cell:3</td><td>Row:9 Cell:4</td><td>Row:9 Cell:5</td></tr>
         <tr><td>Section 10: Responsive CSS & Flexbox</td><td>Row:10 Cell:2</td><td>Row:10 Cell:3</td><td>Row:10 Cell:4</td><td>Row:10 Cell:5</td></tr>
         <tr><td>Section 11: Pricing Panel Project</td><td>Row:11 Cell:2</td><td>Row:11 Cell:3</td><td>Row:11 Cell:4</td><td>Row:11 Cell:5</td></tr>
         </table>
