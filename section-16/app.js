@@ -15,3 +15,8 @@ colors.unshift('red'); // adds 'red' to beginning of array
 
 // slice: .slice(start)   .slice(start, end)
 console.log(colors.slice(1,3)); // ['orange', 'yellow']
+
+// splice: .splice(start) .splice(start, deleteCount)
+const months = ['Jan', 'March', 'April'];
+months.splice(1,0,'Feb');
+console.log(months); // ['Jan', 'Feb', 'March', 'April']
