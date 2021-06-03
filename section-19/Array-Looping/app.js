@@ -15,3 +15,11 @@ const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"]; //DONT TOUCH THI
 for (let i = 0; i < people.length; i++) {
     console.log(people[i].toUpperCase());
 }
+
+// Nested loops
+for (let i = 1; i <= 10; i++) {
+    console.log(`i is: ${i}`);
+    for (let j = 1; j <= 3; j++) {
+        console.log(`\tj is: ${j}`);
+    }
+} 
