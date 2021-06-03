@@ -32,6 +32,7 @@ const seatingChart = [
 
 for (let i = 0; i < seatingChart.length; i++) {
     for (let j = 0; j < seatingChart[i].length; j++) {
-        console.log(`Array #${i}: ${seatingChart[i][j]}`);
+        const row = seatingChart[i]; // Declare new variable to clarify logic below
+        console.log(`Array #${i + 1}: ${row[j]}`);
     }
 }
