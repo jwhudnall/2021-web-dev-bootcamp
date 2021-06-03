@@ -23,3 +23,15 @@ for (let i = 1; i <= 10; i++) {
         console.log(`\tj is: ${j}`);
     }
 } 
+
+const seatingChart = [
+    ['Kristen', 'Erik', 'Namita'],
+    ['Geoffrey', 'Juanita', 'Kevin', 'Antonio'],
+    ['Yuma', 'Sakura', 'Jack', 'Erika']
+]
+
+for (let i = 0; i < seatingChart.length; i++) {
+    for (let j = 0; j < seatingChart[i].length; j++) {
+        console.log(`Array #${i}: ${seatingChart[i][j]}`);
+    }
+}
