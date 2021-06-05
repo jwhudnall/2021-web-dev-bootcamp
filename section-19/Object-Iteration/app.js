@@ -11,5 +11,14 @@ const testScores = {
 
 for (let person in testScores) {
     console.log(`${person} scored: ${testScores[person]}`);
-}Í
+}
 
+// Add up values and find average
+let total = 0;
+let scores = Object.values(testScores);
+for (let score of scores) {
+    total += score;
+}
+
+let avg = total / scores.length;
+console.log(`The average test score was ${avg}`)
