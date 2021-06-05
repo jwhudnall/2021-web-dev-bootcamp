@@ -13,17 +13,19 @@ while (!guess) {
 
 let guessCount = 0;
 
-while (guess !== winningNumber) {
+while (parseInt(guess) !== winningNumber) {
+    if (guess === 'q') break;
+
     if (guess < winningNumber) {
-        guess = parseInt(prompt("Too low. Guess again: "));
+        guess = prompt("Too low. Guess again: ");
         while (!guess) {
-            guess = parseInt(prompt("Please enter a valid number: "))
+            guess = prompt("Please enter a valid number: ")
         }
         guessCount++;
     } else {
-        guess = parseInt(prompt("Too high. Guess again: "));
+        guess = prompt("Too high. Guess again: ");
         while (!guess) {
-            guess = parseInt(prompt("Please enter a valid number: "))
+            guess = prompt("Please enter a valid number: ");
         }
         guessCount++;
     }
