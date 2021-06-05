@@ -7,16 +7,24 @@ while (!maxNumber) {
 const winningNumber = Math.floor(Math.random() * parseInt(maxNumber)) + 1;
 
 let guess = parseInt(prompt("Enter your first guess."));
+while (!guess) {
+    guess = parseInt(prompt("Please enter a valid number: "))
+}
+
 let guessCount = 0;
 
 while (guess !== winningNumber) {
     if (guess < winningNumber) {
-        guess = prompt("Too low. Guess again: ");
-        guess = parseInt(guess);
+        guess = parseInt(prompt("Too low. Guess again: "));
+        while (!guess) {
+            guess = parseInt(prompt("Please enter a valid number: "))
+        }
         guessCount++;
     } else if (guess > winningNumber) {
-        guess = prompt("Too high. Guess again: ");
-        guess = parseInt(guess);
+        guess = parseInt(prompt("Too high. Guess again: "));
+        while (!guess) {
+            guess = parseInt(prompt("Please enter a valid number: "))
+        }
         guessCount++;
     }
 }
