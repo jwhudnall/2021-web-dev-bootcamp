@@ -1,5 +1,11 @@
-let maxNumber = prompt("Welcome! Enter your max number.");
-let winningNumber = Math.floor(Math.random() * parseInt(maxNumber))+1;
+let maxNumber = parseInt(prompt("Welcome! Enter your max number."));
+// checks that maxNumber is a number
+while (!maxNumber) {
+    maxNumber = parseInt(prompt("Please enter a valid number: "));
+}
+
+const winningNumber = Math.floor(Math.random() * parseInt(maxNumber)) + 1;
+
 let guess = parseInt(prompt("Enter your first guess."));
 let guessCount = 0;
 
@@ -13,5 +19,6 @@ while (guess !== winningNumber) {
         guess = parseInt(guess);
         guessCount++;
     }
-} console.log(`Correct. It took you ${guessCount} guesses.`)
+}
+console.log(`It took you ${guessCount} guesses.`)
 
