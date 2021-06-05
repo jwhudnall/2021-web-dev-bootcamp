@@ -30,5 +30,12 @@ while (parseInt(guess) !== winningNumber) {
         guessCount++;
     }
 }
-console.log(`It took you ${guessCount} guesses.`)
+
+if (guess === 'q') {
+    console.log("Ok, you quit.")
+} else {
+    console.log("Congratulations!");
+    console.log(`It took you ${guessCount} guesses.`);
+}
+
 
