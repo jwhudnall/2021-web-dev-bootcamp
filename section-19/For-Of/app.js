@@ -39,3 +39,8 @@ for (let row of seatingChart) {
         console.log("\t"+name);
     }
 }
+
+// Works on strings too
+for (let char of "hello world") {
+    console.log(char);
+}
