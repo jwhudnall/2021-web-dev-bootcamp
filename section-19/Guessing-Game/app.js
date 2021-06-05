@@ -20,7 +20,7 @@ while (guess !== winningNumber) {
             guess = parseInt(prompt("Please enter a valid number: "))
         }
         guessCount++;
-    } else if (guess > winningNumber) {
+    } else {
         guess = parseInt(prompt("Too high. Guess again: "));
         while (!guess) {
             guess = parseInt(prompt("Please enter a valid number: "))
