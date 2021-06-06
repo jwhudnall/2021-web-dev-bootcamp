@@ -13,12 +13,18 @@
 // 3. Use splice to remove items from array.
 
 let action = prompt("What would you like to do? ");
+const todoList = [];
 
-while (action !== 'quit') {
+while (action !== "quit") {
     // if "new", ask what task should be added.
+    if (action === "new") {
+        let item = prompt("Enter a task: ");
+        todoList.push(item);
+        console.log(`${item} added to the list.`)
+    }
     // if "list", display list, including index.
     // if "delete", ask what index should be deleted.
-    
+
     // Otherwise, prompt user for action
     action = prompt("What would you like to do? ");
 }
