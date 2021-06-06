@@ -17,6 +17,8 @@ const todoList = [];
 
 while (action !== "quit") {
     // if "new", ask what task should be added.
+    // if "list", display list, including index.
+    // if "delete", ask what index should be deleted.
     if (action === "new") {
         let item = prompt("Enter a task: ");
         todoList.push(item);
@@ -28,10 +30,6 @@ while (action !== "quit") {
         }
         console.log("**********");
     }
-    // if "list", display list, including index.
-    // if "delete", ask what index should be deleted.
-
-    // Otherwise, prompt user for action
     action = prompt('What would you like to do? Try "new", "list", "delete" or "quit": ');
 }
 
