@@ -12,7 +12,7 @@
 // 2. Store todos in an array.
 // 3. Use splice to remove items from array.
 
-let action = prompt("What would you like to do? ");
+let action = prompt('What would you like to do? Try "new", "list", "delete" or "quit": ');
 const todoList = [];
 
 while (action !== "quit") {
@@ -21,12 +21,18 @@ while (action !== "quit") {
         let item = prompt("Enter a task: ");
         todoList.push(item);
         console.log(`${item} added to the list.`)
+    } else if (action === "list") {
+        console.log("**********");
+        for (let i = 0; i < todoList.length; i++) {
+            console.log(`${i}: ${todoList[i]}`);
+        }
+        console.log("**********");
     }
     // if "list", display list, including index.
     // if "delete", ask what index should be deleted.
 
     // Otherwise, prompt user for action
-    action = prompt("What would you like to do? ");
+    action = prompt('What would you like to do? Try "new", "list", "delete" or "quit": ');
 }
 
 console.log("You quit!");
