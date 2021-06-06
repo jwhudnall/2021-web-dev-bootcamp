@@ -31,8 +31,14 @@ while (action !== "quit" && action !=='q') {
         console.log("**********");
     } else if (action === "delete") {
         const indexToDelete = parseInt(prompt("Enter the index of the item you want to delete: "));
-        todoList.splice(indexToDelete,1);
-        console.log(`Todo Removed`);
+        // Verifies indexToDelete is a number & within a valid range
+        if (!Number.isNaN(indexToDelete) && indexToDelete < todoList.length) {
+            todoList.splice(indexToDelete,1);
+            console.log(`Todo Removed`);
+        } else {
+            console.log('Unknown Index');
+        }
+        
         // Delete an item at index i with array.splice(startIndex, deleteCount)
 
     }
