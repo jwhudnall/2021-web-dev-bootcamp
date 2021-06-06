@@ -11,3 +11,16 @@
 //      (implement quit first)
 // 2. Store todos in an array.
 // 3. Use splice to remove items from array.
+
+let action = prompt("What would you like to do? ");
+
+while (action !== 'quit') {
+    // if "new", ask what task should be added.
+    // if "list", display list, including index.
+    // if "delete", ask what index should be deleted.
+    
+    // Otherwise, prompt user for action
+    action = prompt("What would you like to do? ");
+}
+
+console.log("You quit!");
