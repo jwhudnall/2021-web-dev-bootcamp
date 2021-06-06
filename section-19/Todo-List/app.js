@@ -20,7 +20,7 @@ while (action !== "quit" && action !=='q') {
     // if "list", display list, including index.
     // if "delete", ask what index should be deleted.
     if (action === "new") {
-        let item = prompt("Enter a task: ");
+        const item = prompt("Enter a task: ");
         todoList.push(item);
         console.log(`${item} added to the list.`)
     } else if (action === "list") {
@@ -30,7 +30,7 @@ while (action !== "quit" && action !=='q') {
         }
         console.log("**********");
     } else if (action === "delete") {
-        indexToDelete = parseInt(prompt("Enter the index of the item you want to delete: "));
+        const indexToDelete = parseInt(prompt("Enter the index of the item you want to delete: "));
         todoList.splice(indexToDelete,1);
         console.log(`Todo Removed`);
         // Delete an item at index i with array.splice(startIndex, deleteCount)
