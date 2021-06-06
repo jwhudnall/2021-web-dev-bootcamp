@@ -30,9 +30,9 @@ while (action !== "quit") {
         }
         console.log("**********");
     } else if (action === "delete") {
-        indexToDelete = parseInt(prompt("Which item do you want to delete?"));
+        indexToDelete = parseInt(prompt("Enter the index of the item you want to delete: "));
         todoList.splice(indexToDelete,1);
-        console.log(`Item deleted`);
+        console.log(`Todo Removed`);
         // Delete an item at index i with array.splice(startIndex, deleteCount)
 
     }
