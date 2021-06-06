@@ -15,7 +15,7 @@
 let action = prompt('What would you like to do? Try "new", "list", "delete" or "quit": ');
 const todoList = [];
 
-while (action !== "quit") {
+while (action !== "quit" && action !=='q') {
     // if "new", ask what task should be added.
     // if "list", display list, including index.
     // if "delete", ask what index should be deleted.
