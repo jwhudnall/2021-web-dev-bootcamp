@@ -18,3 +18,12 @@ function greet(firstName="John") {
 
 greet('Elvis');
 greet();
+
+// repeat function accepting 2 arguments
+function repeat(str, numTimes) {
+    let result = '';
+    for (let i = 0; i < numTimes; i++) {
+        result+= str;
+    }
+console.log(result);
+}
