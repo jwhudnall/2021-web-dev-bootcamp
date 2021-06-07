@@ -11,3 +11,10 @@ die3 = rollDie(6);
 console.log(`Die 1 has a value of ${die1}`);
 console.log(`Die 2 has a value of ${die2}`);
 console.log(`Die 3 has a value of ${die3}`);
+
+function greet(firstName="John") {
+    console.log(`Hello, ${firstName}`);
+}
+
+greet('Elvis');
+greet();
