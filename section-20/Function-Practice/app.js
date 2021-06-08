@@ -31,3 +31,13 @@ function capitalize(str) {
     }
     return str[0].toUpperCase() + str.slice(1);
 }
+
+// Function that expects an array of numbers
+// Returns the sum of all values within the array
+function sumArray(arr) {
+    let total = 0;
+    for (let val of arr) {
+        total += val;
+    } 
+    return total;
+}
