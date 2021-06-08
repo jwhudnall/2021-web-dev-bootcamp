@@ -45,3 +45,16 @@ function sumArray(arr) {
     } 
     return total;
 }
+
+// Function that expects a number between 1 and 7
+// If outside this range, returns null
+// Otherwise, returns day of week
+// ex: Index 1 === "Monday"
+// ex: Index 2 === "Tuesday"
+function returnDay(num) {
+    const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        if (num < 1 || num > 7) {
+            return null
+        }
+        return daysOfWeek[num - 1];
+}
