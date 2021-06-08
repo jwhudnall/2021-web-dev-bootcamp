@@ -37,6 +37,9 @@ function capitalize(str) {
 function sumArray(arr) {
     let total = 0;
     for (let val of arr) {
+        if (typeof val !== "number") {
+            return false
+        }
         total += val;
     } 
     return total;
