@@ -29,5 +29,8 @@ console.log(result);
 }
 
 function add(x, y) {
-    return x + y;
+    // Only return result if numbers are used
+    if (typeof x !== 'number' || typeof y !== 'number') {
+        return false;
+    } return x + y;
 }
