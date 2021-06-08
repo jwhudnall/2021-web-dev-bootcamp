@@ -34,6 +34,7 @@ function capitalize(str) {
 
 // Function that expects an array of numbers
 // Returns the sum of all values within the array
+// Returns false if any array values aren't of type "number"
 function sumArray(arr) {
     let total = 0;
     for (let val of arr) {
