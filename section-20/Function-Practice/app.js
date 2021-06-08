@@ -20,3 +20,14 @@ function lastElement(arr) {
     }
     return arr[arr.length - 1]
 }
+
+// Function that accepts a string
+// capitalizes the first letter 
+// leaves the rest of the string unchanged
+
+function capitalize(str) {
+    if (typeof str !== 'string') {
+        return false;
+    }
+    return str[0].toUpperCase() + str.slice(1);
+}
