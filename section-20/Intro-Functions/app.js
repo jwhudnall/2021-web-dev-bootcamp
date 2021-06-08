@@ -27,3 +27,7 @@ function repeat(str, numTimes) {
     }
 console.log(result);
 }
+
+function add(x, y) {
+    return x + y;
+}
