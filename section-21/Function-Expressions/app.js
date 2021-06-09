@@ -28,3 +28,17 @@ function laugh() {
     console.log("Haha!");
 }
 callTwice(laugh) // note: no () behind function argument in laugh
+
+
+function rollDie() {
+    const roll = Math.floor(Math.random() * 6) + 1;
+    console.log(roll);
+}
+
+function callTenTimes(func) {
+    for (let i = 0; i < 10; i++) {
+        func();
+    }
+}
+
+callTenTimes(rollDie); // 10 different execution of rollDie() function
