@@ -1,3 +1,5 @@
+// Function Expressions
+// -------------------
 function add(x, y) {
     return x + y;
 }
@@ -14,7 +16,9 @@ const square = function (a) {
 }
 
 
+
 // Functions as Arguments
+// ---------------------
 function callTwice(func) {
     func();
     func();
