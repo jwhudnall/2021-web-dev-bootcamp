@@ -33,3 +33,16 @@ console.log(radius); // 8
 // Both following console.log's result in ReferenceError
 // console.log(PI); 
 // console.log(msg);
+
+// Lexical scope
+function bankRobbery() {
+    const heroes = ['Spiderman', 'Iron Man', 'Black Panther'];
+    function cryForHelp() {
+        for (let hero of heroes) {
+            console.log(`Help me, ${hero}!`);
+        }
+    }
+    cryForHelp();
+}
+
+bankRobbery();
