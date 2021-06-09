@@ -12,3 +12,15 @@ const addition = function (x, y) {
 const square = function (a) {
     return a * a;
 }
+
+
+// Functions as Arguments
+function callTwice(func) {
+    func();
+    func();
+}
+
+function laugh() {
+    console.log("Haha!");
+}
+callTwice(laugh) // note: no () behind function argument in laugh
