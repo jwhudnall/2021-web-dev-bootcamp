@@ -22,3 +22,14 @@ function dogWatch() {
 }
 
 dogWatch(); // Pitbull
+
+// Block Scope
+let radius = 8;
+if (radius > 0) {
+    const PI = 3.14159;
+    let msg = 'HII!';
+}
+console.log(radius); // 8
+// Both following console.log's result in ReferenceError
+// console.log(PI); 
+// console.log(msg);
