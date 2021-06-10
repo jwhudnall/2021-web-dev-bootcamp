@@ -31,3 +31,13 @@ const hen = {
      console.log("Error!");
  }
  console.log("<<After Error Code>>");
+
+ function yell(msg) {
+     try {
+        console.log(msg.toUpperCase().repeat(3));
+     } catch (error) {
+         console.log(error);
+         console.log("yell() requires a string argument.")
+     }
+     
+ }
