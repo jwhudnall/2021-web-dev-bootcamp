@@ -31,3 +31,8 @@ const arrowTitles = movies.map((movie) => {
 const square = (x) => {
     return x ** 2;
 }
+
+// greet Exercise solution
+const greet = (name) => {
+    return `Hey ${name}!`;
+}
