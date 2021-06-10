@@ -15,3 +15,13 @@ const nums = [1,2,3,4,5,6,7,8,9,10];
 const squares = nums.map(function(num){
     return num * num;
 })
+
+// "cleanNames" Exercise
+// Using .map, create a function to trim whitespace from
+// an array of strings. Returns the trimmed results.
+function cleanNames(stringArray) {
+    const trimmedArray = stringArray.map(function(str) {
+        return str.trim();
+    });
+    return trimmedArray;
+} 
