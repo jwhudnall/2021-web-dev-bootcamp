@@ -19,3 +19,15 @@ const hen = {
         return "EGG";
     }
 }
+
+ // Try / Catch Error Handling
+
+ // Uncaught ReferenceError
+//  hello.toUpperCase(); 
+
+ try {
+     hello.toUpperCase();
+ } catch {
+     console.log("Error!");
+ }
+ console.log("<<After Error Code>>");
