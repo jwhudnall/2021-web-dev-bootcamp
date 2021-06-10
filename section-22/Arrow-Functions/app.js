@@ -36,3 +36,18 @@ const square = (x) => {
 const greet = (name) => {
     return `Hey ${name}!`;
 }
+
+// Implicit Returns
+//*********************
+// Original Syntax:
+// const rollDie = () => {
+//     return Math.floor(Math.random() * 6) + 1;
+// }
+
+// Implicit Return uses () in place of {}:
+const rollDie = () => (
+    Math.floor(Math.random() * 6) + 1
+)
+
+// one-liner
+const add = (a,b) => a + b
