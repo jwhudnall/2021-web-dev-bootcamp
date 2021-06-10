@@ -9,3 +9,13 @@ const dog = {
 }
 
 const bark2 = dog.bark; // "this" within bark() method reverts to "Window" object, not "dog"
+
+// Egg Laying Exercise
+const hen = {
+    name: 'Helen',
+    eggCount: 0,
+    layAnEgg: function() {
+        this.eggCount++;
+        return "EGG";
+    }
+}
