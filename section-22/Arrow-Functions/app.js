@@ -51,3 +51,14 @@ const rollDie = () => (
 
 // one-liner
 const add = (a,b) => a + b
+
+// Putting it all together
+// Before...
+const newMovies = movies.map(function (movie) {
+    return `${movie.title} - ${movie.score / 10}`
+})
+
+// ...and after
+const nMovies = movies.map(movie => (
+    `${movie.title} - ${movie.score / 10}`
+    ));
