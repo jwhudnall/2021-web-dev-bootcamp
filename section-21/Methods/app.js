@@ -14,3 +14,12 @@ const myMath = {
         return x ** 3;
     }
 }
+
+const square = {
+    area : function(side) {
+        return side ** 2;
+    },
+    perimeter(side) {
+        return side * 4;
+    }
+}
