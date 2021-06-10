@@ -4,10 +4,10 @@ const myMath = {
     multiply : function(x, y) {
         return x * y;
     },
-    divide : function(x, y) {
+    divide(x, y) {
         return x / y;
     },
-    square : function(x) {
+    square(x) {
         return x ** 2;
     },
     cube: function(x) {
