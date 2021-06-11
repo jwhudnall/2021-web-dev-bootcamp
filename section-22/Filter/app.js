@@ -53,3 +53,9 @@ function filterMovie(score) {
         return array.filter(m => m.score > score).map(m => m.title);
     }
 } 
+
+// Create function returning movies rated above 65
+const movies65 = filterMovie(65);
+movies65(movies).forEach(function(m) {
+    console.log(m);
+})
