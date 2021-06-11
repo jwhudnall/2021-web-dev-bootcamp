@@ -8,4 +8,4 @@ let startsWithD = words.some(word => word[0].toLowerCase() === 'd'); // true
 const exams = [80, 98, 92, 78, 77, 90, 89, 84, 81, 70];
 
 let allPassedExam = exams.every(score => score >= 75);
-console.log(allPassedExam); // true
+console.log(allPassedExam); // false
