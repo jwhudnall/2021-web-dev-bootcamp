@@ -18,3 +18,21 @@ let reduceTotal = prices.reduce((accu, cV) => {
     return accu + cV;
 })
 console.log(reduceTotal);
+
+// Test: Use reduce() to find the MAX value in prices
+let maxValue = prices.reduce((max, price) => {
+    if (price > max) {
+        return price;
+    } 
+    return max;
+})
+console.log(`The highest price is: ${maxValue}`);
+
+let minValue = prices.reduce((min, price) => {
+    if (price < min) {
+        return price;
+    } 
+    return min;
+})
+
+console.log(`The lowest price is: ${minValue}`);
