@@ -33,3 +33,15 @@ const user = {
 // password: pass renames  variable to "pass"    
 // 'died: deathYear = 'N/A' sets default value for deathYear
 const { firstName, lastName, email, password: pass, died: deathYear = 'N/A'} = user; 
+
+// *** Param Destructuring ***
+
+const fullName = ({first, last}) => {
+    return `${first} ${last}`;
+}
+
+const runner = {
+    first: 'Eliud',
+    last: 'Kipchoge',
+    country: 'Kenya'
+}
