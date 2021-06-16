@@ -80,7 +80,6 @@ const movies = [
  movies.map(movie => {
      return `${movie.title} (${movie.year}) is rated ${movie.score}`;
  })
-
  // Using destructuring
  movies.map(({title, score, year}) => {
     return `${title} (${year}) is rated ${score}`;
