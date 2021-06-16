@@ -45,3 +45,43 @@ const runner = {
     last: 'Kipchoge',
     country: 'Kenya'
 }
+
+// Another use-case
+const movies = [
+    {
+        title: 'Alien',
+        score: 90,
+        year: 1979
+    },
+    {
+        title: 'Star Wars',
+        score: 95,
+        year: 1979
+    },
+    {
+        title: 'Terminator',
+        score: 82,
+        year: 1987
+    },
+    {
+        title: 'TMNT',
+        score: 88,
+        year: 1996
+    }
+]
+
+ // Find movies with score >= 90
+ // Previous method using filter:
+ movies.filter((movie) => movie.score >= 90);
+ // New method using destructuring
+ movies.filter(({score}) => score >= 90);
+
+ // Map Example
+ movies.map(movie => {
+     return `${movie.title} (${movie.year}) is rated ${movie.score}`;
+ })
+
+ // Using destructuring
+ movies.map(({title, score, year}) => {
+    return `${title} (${year}) is rated ${score}`;
+ })
