@@ -18,3 +18,6 @@ for (let att of ['href', 'id', 'class', 'title']) {
         firstLinkAtt[att] = firstLink.getAttribute(att);
     }
 }
+
+// Use setAttribute to change first link's destination
+firstLink.setAttribute('href', 'https://www.google.com'); 
