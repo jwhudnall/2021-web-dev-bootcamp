@@ -1,6 +1,7 @@
 function bannerChangeAfter2Seconds() {
     setTimeout(() => {
-        document.querySelector('#whoops').id = 'banner';
+        let bannerID = document.querySelector('img').id;
+        document.querySelector(`#${bannerID}`).id = 'banner';
         console.log('Changed img ID.')
     }, 2000)
 }
