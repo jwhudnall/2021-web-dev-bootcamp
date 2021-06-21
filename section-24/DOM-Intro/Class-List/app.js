@@ -5,7 +5,6 @@ h2.classList.add('purple')
 
 // Create and call function to toggle 'purple' class
 // off / on every 3 seconds
-
 function toggleClass(cssClass) {
     setInterval(() => {
         h2.classList.toggle(cssClass)
