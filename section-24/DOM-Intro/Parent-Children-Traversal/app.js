@@ -11,3 +11,8 @@ newImage.src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxUUE
 document.body.appendChild(newImage);
 // 4. Add "square" class to new image
 newImage.classList.add('square')
+
+ // Add new bold element before first paragraph
+ const newB = document.createElement('b');
+ newB.append('Hi! '); 
+ document.querySelector('p').prepend(newB);
