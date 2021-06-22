@@ -16,3 +16,11 @@ newImage.classList.add('square')
  const newB = document.createElement('b');
  newB.append('Hi! '); 
  document.querySelector('p').prepend(newB);
+
+// Add a h2 immediately after h1
+const h1 = document.querySelector('h1');
+
+const newH2 = document.createElement('h3');
+newH2.append('I am h3');
+
+h1.insertAdjacentElement('afterend', newH2);
