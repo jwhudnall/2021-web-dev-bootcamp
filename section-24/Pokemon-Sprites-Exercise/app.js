@@ -9,6 +9,7 @@ const baseUrl = 'https://raw.githubusercontent.com/pokeapi/sprites/master/sprite
 // #2 - Add Span with picture #
 for (let i = 1; i < 101; i++) {
     const pokemon = document.createElement('div');
+    pokemon.classList.add('pokemon');
     const label = document.createElement('span');
     label.innerText = `#${i}`;
     const newImage = document.createElement('img');
