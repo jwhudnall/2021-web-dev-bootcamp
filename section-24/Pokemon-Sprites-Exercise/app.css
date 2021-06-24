@@ -6,3 +6,7 @@
 .pokemon img {
     display: block;
 }
+
+.pokemon:hover {
+    background-color: rgb(196, 190, 180);
+}
