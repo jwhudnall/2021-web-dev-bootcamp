@@ -7,7 +7,7 @@ const baseUrl = 'https://raw.githubusercontent.com/pokeapi/sprites/master/sprite
 
 // #1 - Add 100 images to #container div
 // #2 - Add Span with picture #
-for (let i = 1; i < 101; i++) {
+for (let i = 1; i <= 151; i++) {
     const pokemon = document.createElement('div');
     pokemon.classList.add('pokemon');
     const label = document.createElement('span');
