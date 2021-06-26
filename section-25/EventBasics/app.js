@@ -9,3 +9,9 @@ function scream() {
 }
 
 btn.onmouseenter = scream;
+
+ // v3.0 - Event Listeners
+ const btn3 = document.querySelector('#v3');
+ btn3.addEventListener("click", function() {
+     alert('Clicked!');
+ })
