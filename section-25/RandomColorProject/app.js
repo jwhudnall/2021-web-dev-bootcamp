@@ -15,6 +15,12 @@ function generateColor() {
     return `rgb(${red}, ${green}, ${blue})`
 }
 
-
+const h1 = document.querySelector('h1');
+const html = document.querySelector('html');
 const colorBtn = document.querySelector('#colorGen');
-// colorBtn.addEventListener('click', )
+
+colorBtn.addEventListener('click', function() {
+    let newColor = generateColor();
+    html.style.backgroundColor = newColor;
+    h1.textContent = newColor;
+})
