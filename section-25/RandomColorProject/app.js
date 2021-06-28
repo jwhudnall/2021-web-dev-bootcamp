@@ -19,7 +19,7 @@ const h1 = document.querySelector('h1');
 const colorBtn = document.querySelector('#colorGen');
 
 colorBtn.addEventListener('click', function() {
-    let newColor = generateColor();
+    const newColor = generateColor();
     document.body.style.backgroundColor = newColor;
     h1.textContent = newColor;
 })
