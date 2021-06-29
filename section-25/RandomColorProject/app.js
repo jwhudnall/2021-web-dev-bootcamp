@@ -20,7 +20,7 @@ function generateColor() {
     return `rgb(${red}, ${green}, ${blue})`
 }
 
-function isDark() {
+function checkBrightness() {
     const colorVals = newColor.match(/[-+]?[0-9]*\.?[0-9]+/g);
     const totalColorNum = colorVals.reduce((accu, currentVal) => {
         return parseInt(accu) + parseInt(currentVal);
@@ -41,5 +41,5 @@ colorBtn.addEventListener('click', function() {
     newColor = generateColor();
     document.body.style.backgroundColor = newColor;
     h1.textContent = newColor;
-    isDark();
+    checkBrightness();
 })
