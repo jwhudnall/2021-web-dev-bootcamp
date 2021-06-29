@@ -7,9 +7,19 @@ const makeRandColor = () => {
 
 const buttons = document.querySelectorAll('button');
 
-for(let button of buttons) {
-    button.addEventListener('click', function() {
+for (let button of buttons) {
+    button.addEventListener('click', function () {
         button.style.backgroundColor = makeRandColor();
         console.log('Updated!')
     })
+}
+
+// H2 example using keyword "this"
+const h2s = document.querySelectorAll('h2');
+
+for (let h2 of h2s) {
+    h2.addEventListener('click', function () {
+        h2.style.backgroundColor = makeRandColor();
+    }
+    )
 }
