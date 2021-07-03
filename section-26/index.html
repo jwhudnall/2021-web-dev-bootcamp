@@ -10,18 +10,40 @@
 </head>
 
 <body>
-    <h1>Ping Pong Score Keeper</h1>
-    <section id="scoring">
-        <span id="score">0 to 0</span>
-        <p>Use the buttons below to keep score.</p>
-    </section>
+    <div id="card">
+        <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1375&q=80"
+            alt="Red Ping Pong Paddle" id="pingPong">
+        <h1>Ping Pong Score Keeper</h1>
+        <section id="scoring">
+            <span id="score">0 to 0</span>
+            <p>Use the buttons below to keep score.</p>
+
+            <p>
+                <label for="score-select">Playing To:</label>
+                <select name="score" id="score-select">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </p>
+
+            <span id="buttons">
+                <button id="playerOne">+1 Player One</button>
+                <button id="playerTwo">+1 Player Two</button>
+                <button id="reset">Reset</button>
+            </span>
+
+        </section>
+    </div>
 
 
 
 
-    <button id="playerOne">+1 Player One</button>
-    <button id="playerTwo">+1 Player Two</button>
-    <button id="reset">Reset</button>
+
+
 
 
     <script src="app.js"></script>
