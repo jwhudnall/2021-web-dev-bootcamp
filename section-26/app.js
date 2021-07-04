@@ -1,5 +1,7 @@
+let winningScoreSelect = document.querySelector('#score-select');
 let p1Score = 0;
 let p2Score = 0;
+let winningScore = winningScoreSelect.value;
 
 let p1ScoreSpan = document.querySelector('#p1ScoreSpan');
 let p2ScoreSpan = document.querySelector('#p2ScoreSpan');
@@ -15,4 +17,8 @@ p1ScoreBtn.addEventListener('click', function(e) {
 p2ScoreBtn.addEventListener('click', function(e) {
     p2Score++;
     p2ScoreSpan.textContent = p2Score;
+})
+
+winningScoreSelect.addEventListener('input', function(e) {
+    winningScore = parseInt(winningScoreSelect.value);
 })
