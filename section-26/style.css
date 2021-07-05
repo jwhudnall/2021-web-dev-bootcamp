@@ -16,3 +16,11 @@ div {
     height: 100%;
     
 }
+
+.won {
+    color: rgb(71, 184, 71);
+}
+
+.lost {
+    color: rgb(207, 71, 71);
+}
