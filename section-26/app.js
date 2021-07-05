@@ -26,6 +26,10 @@ winningScoreSelect.addEventListener('input', function(e) {
     winningScore = parseInt(winningScoreSelect.value);
 })
 
+reset.addEventListener('click', function() {
+    resetGame();
+})
+
 function checkStatus() {
     if(p1Score === winningScore || p2Score === winningScore) {
         // Logic for Gameover
@@ -47,4 +51,19 @@ function checkStatus() {
         p1ScoreBtn.disabled = true;
         p2ScoreBtn.disabled = true;
     }
+}
+
+function resetGame() {
+    const cls = ["won", "lost"]
+    // Reset both scores to 0
+    p1Score = 0;
+    p2Score = 0;
+    // Change span text to 0 & remove class
+    p1ScoreSpan.textContent = '0';
+    p1ScoreSpan.classList.remove(...cls);
+    p2ScoreSpan.textContent = '0';
+    p2ScoreSpan.classList.remove(...cls);
+    // Re-enable p1/p2 buttons
+    p1ScoreBtn.disabled = false;
+    p2ScoreBtn.disabled = false;
 }
