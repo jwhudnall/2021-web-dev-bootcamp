@@ -33,18 +33,16 @@ reset.addEventListener('click', function() {
 function checkStatus() {
     if(p1Score === winningScore || p2Score === winningScore) {
         // Logic for Gameover
-        console.log('Game Over!'); // Remove in future
         if(p1Score > p2Score) {
             // Player 1 won
             p1ScoreSpan.classList.toggle('#won');
             p2ScoreSpan.classList.toggle('#lost');
-            console.log('Player 1 won!')
             p1ScoreSpan.classList.add('won');
             p2ScoreSpan.classList.add('lost');
         } else {
+            // Player 2 won
             p1ScoreSpan.classList.toggle('#lost');
             p2ScoreSpan.classList.toggle('#won');
-            console.log('Player 2 won!');
             p1ScoreSpan.classList.add('lost');
             p2ScoreSpan.classList.add('won');
         }
