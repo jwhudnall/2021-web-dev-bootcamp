@@ -24,3 +24,26 @@ div {
 .lost {
     color: rgb(207, 71, 71);
 }
+
+#p1ScoreButton {
+    background-color: rgb(132, 214, 132)
+}
+
+#p2ScoreButton {
+    background-color: rgb(38, 113, 211);
+}
+
+#reset {
+    background-color: red;
+}
+
+#buttons {
+    display: flex;
+    justify-content: stretch;
+}
+
+.scoreButtons {
+    width: 100px;
+    border: none;
+    height: 3em;
+}
