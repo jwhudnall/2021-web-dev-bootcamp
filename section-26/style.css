@@ -29,12 +29,24 @@ div {
     background-color: rgb(132, 214, 132)
 }
 
+#p1ScoreButton:hover {
+    background-color: rgb(102, 177, 102)
+}
+
 #p2ScoreButton {
     background-color: rgb(38, 113, 211);
 }
 
+#p2ScoreButton:hover {
+    background-color: rgb(25, 88, 170);
+}
+
 #reset {
-    background-color: red;
+    background-color: rgb(212, 82, 82);
+}
+
+#reset:hover {
+    background-color: rgb(202, 45, 45);
 }
 
 #buttons {
@@ -46,4 +58,7 @@ div {
     width: 100px;
     border: none;
     height: 3em;
+    color: white;
+    font-weight: 800;
+    font-size: .8em;
 }
