@@ -1,3 +1,5 @@
+let numberOfPlayers = 0;
+
 const p1 = {
     score: 0,
     button: document.querySelector('#p1Button'),
@@ -54,3 +56,11 @@ function reset() {
     }
 }
 
+const numPlayers = document.querySelector('#numPlayers');
+const numPlayersLabel = document.querySelector('#numPlayersLabel');
+
+numPlayers.addEventListener('change', function() {
+    numberOfPlayers = this.value;
+    document.querySelector('#introduction').remove();
+    console.log(`${numberOfPlayers} players!`)
+})
