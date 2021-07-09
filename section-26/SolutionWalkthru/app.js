@@ -48,7 +48,7 @@ resetButton.addEventListener('click', reset)
 
 function reset() {
     isGameOver = false;
-    for(let p of [p1, p2]) {
+    for (let p of [p1, p2]) {
         p.score = 0;
         p.display.textContent = 0;
         p.display.classList.remove('has-text-success', 'has-text-danger');
@@ -59,8 +59,39 @@ function reset() {
 const numPlayers = document.querySelector('#numPlayers');
 const numPlayersLabel = document.querySelector('#numPlayersLabel');
 
-numPlayers.addEventListener('change', function() {
+numPlayers.addEventListener('change', function () {
     numberOfPlayers = this.value;
-    document.querySelector('#introduction').remove();
+    document.querySelector('#naming').remove();
     console.log(`${numberOfPlayers} players!`)
-})
+
+    addPlayer('player1Name', 'player1Name', 'Player 1 Name');
+    addPlayer('player2Name', 'player2Name', 'Player 2 Name');
+    // const newDiv = document.createElement('div');
+
+    // const newInput = document.createElement('input');
+    // newInput.id = "player1Name";
+    // newInput.name = "player1Name";
+    // newInput.type = "text";
+
+    // const label = document.createElement('label');
+    // label.setAttribute("for", "player1Name");
+    // label.innerHTML = "Player 1 Name";
+    // newDiv.append(label);
+    // newDiv.append(newInput);
+    // document.querySelector('#introduction').append(newDiv);
+}
+)
+
+function addPlayer(id, name, labelText) {
+    const newDiv = document.createElement('div');
+    const newInput = document.createElement('input');
+    newInput.id = id;
+    newInput.name = name;
+    newInput.type = 'text';
+    const label = document.createElement('label');
+    label.setAttribute('for', name);
+    label.innerHTML = labelText;
+    newDiv.append(label);
+    newDiv.append(newInput);
+    document.querySelector('#introduction').append(newDiv);
+}
