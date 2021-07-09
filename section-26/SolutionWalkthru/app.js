@@ -66,19 +66,9 @@ numPlayers.addEventListener('change', function () {
 
     addPlayer('player1Name', 'player1Name', 'Player 1 Name');
     addPlayer('player2Name', 'player2Name', 'Player 2 Name');
-    // const newDiv = document.createElement('div');
-
-    // const newInput = document.createElement('input');
-    // newInput.id = "player1Name";
-    // newInput.name = "player1Name";
-    // newInput.type = "text";
-
-    // const label = document.createElement('label');
-    // label.setAttribute("for", "player1Name");
-    // label.innerHTML = "Player 1 Name";
-    // newDiv.append(label);
-    // newDiv.append(newInput);
-    // document.querySelector('#introduction').append(newDiv);
+    // ToDo:
+    // Add submit button that captures players names
+    // Change green/blue button text to display player names
 }
 )
 
