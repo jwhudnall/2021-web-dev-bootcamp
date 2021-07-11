@@ -1,7 +1,3 @@
-.winner {
-    color: green;
-}
-
-.loser {
-    color: red;
+.hidden {
+    display: none;
 }

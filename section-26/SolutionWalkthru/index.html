@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Score Keeper</title>
 </head>
 
@@ -29,6 +30,7 @@
                         </header>
                         <div class="card-content">
                             <div class="content">
+
                                 <!-- Introduction Section -->
                                 <section class="section" id="introduction">
                                     <section class="section" id="numPlayersSelect">
@@ -45,38 +47,45 @@
 
                                 </section>
 
-                                <!-- Main Section -->
-                                <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span>
-                                </h1>
-                                <p class="subtitle">Use the buttons below to keep score.</p>
 
-                                <div class="columns">
-                                    <div class="column">
-                                        <label for="playTo" class="label is-large is-inline">Playing To </label>
-                                        <div class="select is-rounded">
-                                            <select name="" id="playTo">
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                            </select>
+                                <!-- Main Section -->
+                                <section class="section hidden" id='scoreKeeping'>
+                                    <h1 class="title is-1"><span id="p1Display">0</span> to <span
+                                            id="p2Display">0</span>
+                                    </h1>
+                                    <p class="subtitle">Use the buttons below to keep score.</p>
+
+                                    <div class="columns">
+                                        <div class="column">
+                                            <label for="playTo" class="label is-large is-inline">Playing To </label>
+                                            <div class="select is-rounded">
+                                                <select name="" id="playTo">
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <label for="winBy2" class="label is-large is-inline">Win by 2</label>
+                                            <input type="checkbox" id="winBy2">
                                         </div>
                                     </div>
-                                    <div class="column">
-                                        <label for="winBy2" class="label is-large is-inline">Win by 2</label>
-                                        <input type="checkbox" id="winBy2">
-                                    </div>
-                                </div>
+                                </section>
+
 
 
                             </div>
                         </div>
-                        <footer class="card-footer">
+
+                        <!-- Footer / Button location -->
+                        <footer class="card-footer hidden" id="cardFooter">
                             <button id="p1Button" class="is-primary button card-footer-item is-large">+1 Player
                                 One</button>
                             <button id="p2Button" class="is-info button card-footer-item is-large">+1 Player

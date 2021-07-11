@@ -1,5 +1,3 @@
-let numberOfPlayers = 0;
-
 const p1 = {
     score: 0,
     button: document.querySelector('#p1Button'),
@@ -14,16 +12,19 @@ const p2 = {
 const resetButton = document.querySelector('#reset');
 const winningScoreSelect = document.querySelector('#playTo');
 const winBy2Checkbox = document.querySelector('#winBy2');
+const scoreKeepingSection = document.querySelector('#scoreKeeping');
+const cardFooterSection = document.querySelector('#cardFooter');
 let winBy2 = false;
 let winningScore = parseInt(winningScoreSelect.value)
 let isGameOver = false;
+let numberOfPlayers = 0;
 
 function updateScores(player, opponent) {
     if (!isGameOver) {
         player.score++;
         player.display.textContent = player.score;
         if (player.score === winningScore) {
-            if (winBy2 && scoreDifference(player, opponent) || !winBy2) {
+            if (winBy2 && scoreDifferenceGreaterThan2(player, opponent) || !winBy2) {
                 isGameOver = true;
                 player.display.classList.add('has-text-success')
                 opponent.display.classList.add('has-text-danger')
@@ -73,7 +74,6 @@ numPlayers.addEventListener('change', function () {
     numberOfPlayers = parseInt(this.value);
     document.querySelector('#numPlayersSelect').remove();
     console.log(`${numberOfPlayers} players!`)
-
     addPlayers(numberOfPlayers);
 }
 )
@@ -131,15 +131,22 @@ function submitNames() {
 
     document.querySelector('#playersNameSection').remove();
     document.querySelector('#introduction').remove();
+
+    displayContent(scoreKeepingSection, cardFooterSection);
 }
 
 // Hide main section until names are submitted
-// Add win-by-2 logic
 
-function scoreDifference(player, opponent) {
+function scoreDifferenceGreaterThan2(player, opponent) {
     return (player.score - opponent.score) >= 2;
 }
 
 function winBy2IsChecked() {
     winBy2 = winBy2Checkbox.checked;
+}
+
+function displayContent(...sections) {
+    for(let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove('hidden');
+    }
 }
