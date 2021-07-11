@@ -13,6 +13,8 @@ const p2 = {
 
 const resetButton = document.querySelector('#reset');
 const winningScoreSelect = document.querySelector('#playTo');
+const winBy2Checkbox = document.querySelector('#winBy2');
+let winBy2 = false;
 let winningScore = parseInt(winningScoreSelect.value)
 let isGameOver = false;
 
@@ -21,11 +23,16 @@ function updateScores(player, opponent) {
         player.score++;
         player.display.textContent = player.score;
         if (player.score === winningScore) {
-            isGameOver = true;
-            player.display.classList.add('has-text-success')
-            opponent.display.classList.add('has-text-danger')
-            player.button.disabled = true;
-            opponent.button.disabled = true;
+            if (winBy2 && scoreDifference(player, opponent) || !winBy2) {
+                isGameOver = true;
+                player.display.classList.add('has-text-success')
+                opponent.display.classList.add('has-text-danger')
+                player.button.disabled = true;
+                opponent.button.disabled = true;
+            } else {
+                winningScore++;
+            }
+
         }
     }
 }
@@ -46,6 +53,8 @@ winningScoreSelect.addEventListener('change', function () {
 
 resetButton.addEventListener('click', reset)
 
+winBy2Checkbox.addEventListener('change', winBy2IsChecked);
+
 function reset() {
     isGameOver = false;
     for (let p of [p1, p2]) {
@@ -53,6 +62,7 @@ function reset() {
         p.display.textContent = 0;
         p.display.classList.remove('has-text-success', 'has-text-danger');
         p.button.disabled = false;
+        winningScore = parseInt(winningScoreSelect.value);
     }
 }
 
@@ -108,7 +118,7 @@ function addPlayers(numPlayers) {
 
 function submitNames() {
     for (let i = 1; i < numberOfPlayers + 1; i++) {
-        const playersNameID = '#player'+i+'Name';
+        const playersNameID = '#player' + i + 'Name';
         console.log(`i value: ${i}. Players Name ID: ${playersNameID}`);
         const playersNameField = document.querySelector(playersNameID);
         const playersName = playersNameField.value;
@@ -118,10 +128,18 @@ function submitNames() {
         buttonID.textContent = `+1 ${playersName}`
         console.log(`player added: ${playersName}`);
     }
-    
+
     document.querySelector('#playersNameSection').remove();
     document.querySelector('#introduction').remove();
 }
 
 // Hide main section until names are submitted
 // Add win-by-2 logic
+
+function scoreDifference(player, opponent) {
+    return (player.score - opponent.score) >= 2;
+}
+
+function winBy2IsChecked() {
+    winBy2 = winBy2Checkbox.checked;
+}
