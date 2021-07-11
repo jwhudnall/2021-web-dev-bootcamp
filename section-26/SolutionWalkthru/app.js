@@ -119,10 +119,9 @@ function submitNames() {
         console.log(`player added: ${playersName}`);
     }
     
-    // assign names to buttons
-    // hide section
     document.querySelector('#playersNameSection').remove();
     document.querySelector('#introduction').remove();
 }
 
+// Hide main section until names are submitted
 // Add win-by-2 logic
