@@ -23,28 +23,47 @@ const fakeRequestPromise = (url) => {
 }
 
 // The "Callback approach"
-fakeRequestCallback('books.com/page1', 
-    function (response) {
-    console.log('It worked!')
-    console.log(response)
-    // if continuing, need to nest successive requests with callbacks
-    fakeRequestCallback('books.com/page2',
-        function(response) {
-            console.log('It worked again.');
-            console.log(response)
-            fakeRequestCallback('books.com/page3',
-            function(response) {
-                console.log('It worked a 3rd time!');
-                console.log(response);
-            },
-            function(error) {
-                console.log('Error (3rd request)!', error);
+// fakeRequestCallback('books.com/page1', 
+//     function (response) {
+//     console.log('It worked!')
+//     console.log(response)
+//     // if continuing, need to nest successive requests with callbacks
+//     fakeRequestCallback('books.com/page2',
+//         function(response) {
+//             console.log('It worked again.');
+//             console.log(response)
+//             fakeRequestCallback('books.com/page3',
+//             function(response) {
+//                 console.log('It worked a 3rd time!');
+//                 console.log(response);
+//             },
+//             function(error) {
+//                 console.log('Error (3rd request)!', error);
+//             })
+//         },
+//         function(error) {
+//             console.log('Error (2nd request)!', error)
+//         })
+// }, function (error) {
+//     console.log('Error...');
+//     console.log(error);
+// })
+
+
+// Using Promises
+const request = fakeRequestPromise('yelp.com/api/coffee');
+
+request
+    .then(() => {
+        console.log('It worked.')
+        fakeRequestPromise('yelp.com/api/java')
+            .then(() => {
+                console.log('It worked (2nd time).')
             })
-        },
-        function(error) {
-            console.log('Error (2nd request)!', error)
-        })
-}, function (error) {
-    console.log('Error...');
-    console.log(error);
-})
+            .catch(() => {
+                console.log('Error. Connection timed out on second call...')
+            })
+    })
+    .catch(() => {
+        console.log('Error. Connection timed out...')
+    })
