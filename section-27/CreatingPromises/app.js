@@ -11,11 +11,24 @@ const fakeRequest = (url) => {
     })
 }
 
-fakeRequest('/dogs/1')
-    .then((data) => {
-        console.log('Done with request!');
-        console.log('data is:', data)
+// fakeRequest('/dogs/1')
+//     .then((data) => {
+//         console.log('Done with request!');
+//         console.log('data is:', data)
+//     })
+//     .catch((err) => {
+//         console.log('Oh no!', err)
+//     })
+
+const delayedColorChange = (color, delay) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            document.body.style.backgroundColor = color;
+            resolve();
+        }, delay)
     })
-    .catch((err) => {
-        console.log('Oh no!', err)
-    })
+}
+
+delayedColorChange('red', 1000)
+    .then(() => delayedColorChange('orange', 1000)) // implicit return
+    .then(() => delayedColorChange('yellow', 1000))
