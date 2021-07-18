@@ -11,3 +11,20 @@ myReq.onerror = function(err) {
 myReq.open('get', 'https://icanhazdadjoke.com/', true);
 myReq.setRequestHeader('Accept', 'application/json');
 myReq.send();
+
+
+// btc price lookup
+const req = new XMLHttpRequest();
+
+req.onload = function() {
+    console.log('Request complete');
+    const data = JSON.parse(this.responseText);
+    console.log(data.ticker.price);
+}
+
+req.onerror = function() {
+    console.log('Error. Request timed out...')
+};
+
+req.open('get', 'https://api.cryptonator.com/api/ticker/btc-usd', true);
+req.send();
