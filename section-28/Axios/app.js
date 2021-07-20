@@ -23,8 +23,32 @@ const getDadJoke = async () => {
     try {
         const config = { headers: { Accept: 'application/json' } }
         const res = await axios.get('https://icanhazdadjoke.com/', config);
-        console.log(res.data.joke)
+        const joke = res.data.joke;
+        return joke;
     } catch (e) {
-        console.log(e)
+        return "No Jokes Available."
     }
 }
+
+const addNewJoke = async () => {
+    try {
+        const jokeText = await getDadJoke();
+        const newLI = document.createElement('LI');
+        newLI.append(jokeText);
+        jokeList.append(newLI);
+    } catch (e) {
+
+    }
+}
+
+const clearList = () => {
+    const jokeList = document.querySelector('#jokeList');
+    jokeList.innerHTML = "";
+}
+
+const jokeBtn = document.querySelector('#jokeBtn');
+const clearBtn = document.querySelector('#clearList');
+const jokeList = document.querySelector('#jokeList');
+
+jokeBtn.addEventListener('click', addNewJoke);
+clearBtn.addEventListener('click', clearList)
