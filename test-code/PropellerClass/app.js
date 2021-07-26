@@ -1,15 +1,20 @@
 let currentWCP = 210000;
 
-class Propeller{
-    constructor(orientation, diameter, pitch) {
-        this.wcpNumber = currentWCP;
+class StandardItem {
+    constructor(condition, status, location) {
+        this.condition = condition;
+        this.status = status;
+        this.location = location;
+    }
+}
+
+class Propeller extends StandardItem {
+    constructor(condition, status, location, orientation, diameter, pitch) {
+        super(condition, status, location);
+        this.wcp = currentWCP;
         this.orientation = orientation;
         this.diameter = diameter;
         this.pitch = pitch;
-        // Standard
-        this.location = 'Wildcat Propeller';
-        this.condition = 'Repaired';
-        this.status = 'Inventory';
         currentWCP++;
     }
     damageEvent() {
