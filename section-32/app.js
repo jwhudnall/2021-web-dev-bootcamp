@@ -10,5 +10,6 @@ const cats = require('./Shelter'); // Imports entire "Shelter" DIR
 // console.log(cats[0].name)
 
 for(let cat of cats) {
-    console.log(cat.name);
+    const {name, color} = cat;
+    console.log(`The cat ${name} is ${color}!`);
 }
