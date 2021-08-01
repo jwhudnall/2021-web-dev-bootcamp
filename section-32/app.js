@@ -1,6 +1,14 @@
 // const math = require('./math');
 
-const { PI, square } = require('./math');
-console.log(PI);
+const cats = require('./Shelter'); // Imports entire "Shelter" DIR
 
-console.log(square(9));
+// const { PI, square } = require('./math');
+// console.log(PI);
+
+// console.log(square(9));
+
+// console.log(cats[0].name)
+
+for(let cat of cats) {
+    console.log(cat.name);
+}
