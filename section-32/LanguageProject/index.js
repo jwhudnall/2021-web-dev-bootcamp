@@ -12,6 +12,10 @@ function getISO(input) {
 
 function getLanguageName(ISO) {
     const languageObj = langs.where("3", ISO);
-    console.log(languageObj.name);
-    return
+    try {
+        console.log(languageObj.name);
+    } catch(e) {
+        console.log('Could not match language. Please try again with a larger sample.')
+    }
+    
 }
