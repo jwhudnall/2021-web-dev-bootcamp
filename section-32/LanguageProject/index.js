@@ -1,5 +1,6 @@
 const franc = require('franc');
 const langs = require('langs');
+const colors = require('colors');
 
 const input = process.argv[2]; // Collect CLI text
 const iso3 = getISO(input); // retrieve ISO 639-3 language code (3 letters)
@@ -13,9 +14,9 @@ function getISO(input) {
 function getLanguageName(ISO) {
     // 'und' returned if language undefined
     if (ISO === 'und') {
-        console.log('Something went wrong...Try a larger sample of text.')
+        console.log('Something went wrong...Try a larger sample of text.'.red)
     } else {
         const languageObj = langs.where("3", ISO);
-        console.log(`Our best guess is: ${languageObj.name}`);
+        console.log(`Our best guess is: ${languageObj.name}`.green);
     }
 }
