@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     res.send('<h1>Home Page</h1>')
 })
 
+app.post('/cats', (req, res) => {
+    res.send('POST request received...')
+})
+
 // /cats => 'meow'
 app.get('/cats', (req, res) => {
     console.log('Cat Request!'); // displayed in terminal
@@ -21,6 +25,12 @@ app.get('/cats', (req, res) => {
 // /dogs => 'woof'
 app.get('/dogs', (req, res) => {
     res.send('Woof!');
+})
+
+// Routes remaining GET requests.
+// MUST be placed at end (blocks other routes otherwise)
+app.get('*', (req, res) => {
+    res.send('Error 404. Content not found.')
 })
 
 app.listen(port, () => {
