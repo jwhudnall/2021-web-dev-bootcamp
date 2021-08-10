@@ -8,14 +8,17 @@ const port = 3000;
 //     res.send('<h1>Welcome to My Webpage</h1><ul>Topics</ul><li>Bitcoin</li><li>Health</li></ul>')
 // })
 
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
 // root route
 app.get('/', (req, res) => {
     res.send('<h1>Home Page</h1>')
 })
 
-app.get('/r/:subreddit', (req, res) => {
-    const { subreddit } = req.params;
-    res.send(`Welcome to the ${subreddit.capitalize()} Subreddit.`)
+app.get('/r/:subreddit/:postID', (req, res) => {
+    const { subreddit, postID } = req.params;
+    res.send(`<h1>Welcome to the ${subreddit.capitalize()} Subreddit</h1><h2>Viwing Post ID: ${postID}</h2>`)
 })
 
 app.post('/cats', (req, res) => {
@@ -41,7 +44,3 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
 });
-
-String.prototype.capitalize = function() {
-    return this.charAt(0).toUpperCase() + this.slice(1);
-}
