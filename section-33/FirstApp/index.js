@@ -8,7 +8,7 @@ const port = 3000;
 //     res.send('<h1>Welcome to My Webpage</h1><ul>Topics</ul><li>Bitcoin</li><li>Health</li></ul>')
 // })
 
-String.prototype.capitalize = function() {
+String.prototype.capitalize = function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
 // root route
@@ -35,11 +35,17 @@ app.get('/dogs', (req, res) => {
     res.send('Woof!');
 })
 
+app.get('/search', (req, res) => {
+    const { q } = req.query;
+    res.send(`<h1>Search Results for: ${q.capitalize()}</h1>`)
+})
+
 // Routes remaining GET requests.
 // MUST be placed at end (blocks other routes otherwise)
 app.get('*', (req, res) => {
     res.send('Error 404. Content not found.')
 })
+
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
