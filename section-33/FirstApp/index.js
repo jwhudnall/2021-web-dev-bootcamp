@@ -37,7 +37,7 @@ app.get('/dogs', (req, res) => {
 
 app.get('/search', (req, res) => {
     const { q } = req.query;
-    res.send(`<h1>Search Results for: ${q.capitalize()}</h1>`)
+    res.send(`<h1>Search Results for: ${q}</h1>`)
 })
 
 // Routes remaining GET requests.
