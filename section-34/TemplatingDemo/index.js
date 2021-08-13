@@ -5,7 +5,7 @@ const port = 3000;
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.send('Welcome Home')
+    res.render('home'); // Renders home.ejs file in default "views" DIR
 })
 
 app.listen(port, () => {
