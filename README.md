@@ -133,7 +133,7 @@ Universe</td>
         <tr>
                 <td>Section 11: Pricing Panel Project</td>
                 <td>Section 22: Callbacks & Array Methods</td>
-                <td>Section 33: Creating Servers With Express</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-33/FirstApp">Section 33: Creating Servers With Express</a></td>
                 <td>Row:11 Cell:4</td><td>Row:11 Cell:5</td>
         </tr>
         </table>
