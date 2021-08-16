@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
     res.render('home'); // Renders home.ejs file in default "views" DIR
 })
 
+app.get('/rand', (req, res) => {
+    res.render('random.ejs')
+})
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 })
