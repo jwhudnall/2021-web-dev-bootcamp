@@ -80,20 +80,20 @@ Templating</td>
                 <td>Row:2 Cell:5</td>
         </tr>
         <tr>
-                <td>Section 3: HTML: The Essentials</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-03">Section 3: HTML: The Essentials</a></td>
                 <td>Section 14: Javascript Basics!</td>
                 <td>Section 25: The Missing Piece: DOM Events</td>
                 <td>Section 36: Our First Database: MongoDB</td>
                 <td>Row:3 Cell:5</td>
         </tr>
         <tr>
-                <td>Section 4: HTML: Next Steps & Semantics</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-04">Section 4: HTML: Next Steps & Semantics</a></td>
                 <td>Section 15: JS Strings and More</td>
                 <td>Section 26: Score Keeper CodeAlong</td>
                 <td>Row:4 Cell:4</td><td>Row:4 Cell:5</td>
         </tr>
         <tr>
-                <td>Section 5: HTML: Forms & Tables</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-05">Section 5: HTML: Forms & Tables</a></td>
                 <td>Section 16: JS Decision Making</td>
                 <td>Section 27: Async JavaScript: Oh Boy!</td>
                 <td>Row:5 Cell:4</td><td>Row:5 Cell:5</td>
