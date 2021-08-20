@@ -66,7 +66,7 @@ Section 59: YelpCamp: Deploying -->
 <table class="tftable" border="1">
         <tr>
                 <td>Section 1: Course Orientation</td>
-                <td>Section 12: CSS Frameworks: Bootstrap</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-12">Section 12: CSS Frameworks: Bootstrap</a></td>
                 <td>Section 23: Newer JavaScript Features</td>
                 <td>Section 34: Creating Dynamic HTML With
 Templating</td>
@@ -74,27 +74,27 @@ Templating</td>
         </tr>        
         <tr>
                 <td>Section 2: An Introduction to Web Development</td>
-                <td>Section 13: OPTIONAL Museum Of Candy Project</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-13">Section 13: OPTIONAL Museum Of Candy Project</a></td>
                 <td>Section 24: Introducing The World Of The DOM</td>
                 <td>Section 35: Defining RESTful Routes</td>
                 <td>Row:2 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-03">Section 3: HTML: The Essentials</a></td>
-                <td>Section 14: Javascript Basics!</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-14">Section 14: Javascript Basics!</a></td>
                 <td>Section 25: The Missing Piece: DOM Events</td>
                 <td>Section 36: Our First Database: MongoDB</td>
                 <td>Row:3 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-04">Section 4: HTML: Next Steps & Semantics</a></td>
-                <td>Section 15: JS Strings and More</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-15">Section 15: JS Strings and More</a></td>
                 <td>Section 26: Score Keeper CodeAlong</td>
                 <td>Row:4 Cell:4</td><td>Row:4 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-05">Section 5: HTML: Forms & Tables</a></td>
-                <td>Section 16: JS Decision Making</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-16">Section 16: JS Decision Making</a></td>
                 <td>Section 27: Async JavaScript: Oh Boy!</td>
                 <td>Row:5 Cell:4</td><td>Row:5 Cell:5</td>
         </tr>        
@@ -118,20 +118,20 @@ Templating</td>
                 <td>Row:8 Cell:4</td><td>Row:8 Cell:5</td>
         </tr>
         <tr>
-                <td>Section 9: Other Assorted Useful CSS Properties</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-09">Section 9: Other Assorted Useful CSS Properties<a></td>
                 <td>Section 20: Introducing Functions</td>
                 <td>Section 31: Our First Brush With Node</td>
                 <td>Row:9 Cell:4</td><td>Row:9 Cell:5</td>
         </tr>        
         <tr>
-                <td>Section 10: Responsive CSS & Flexbox</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-10">Section 10: Responsive CSS & Flexbox</a></td>
                 <td>Section 21: Leveling Up Functions</td>
                 <td>Section 32: Exploring Modules & The NPM
 Universe</td>
                 <td>Row:10 Cell:4</td><td>Row:10 Cell:5</td>
         </tr>
         <tr>
-                <td>Section 11: Pricing Panel Project</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-11">Section 11: Pricing Panel Project</a></td>
                 <td>Section 22: Callbacks & Array Methods</td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-33/FirstApp">Section 33: Creating Servers With Express</a></td>
                 <td>Row:11 Cell:4</td><td>Row:11 Cell:5</td>
