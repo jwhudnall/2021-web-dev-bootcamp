@@ -99,20 +99,20 @@ Templating</td>
                 <td>Row:5 Cell:4</td><td>Row:5 Cell:5</td>
         </tr>        
         <tr>
-                <td>Section 6: CSS: The Very Basics</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-06">Section 6: CSS: The Very Basics</a></td>
                 <td>Section 17: JS Arrays</td>
                 <td>Section 28: AJAX and API's</td>
                 <td>Row:6 Cell:4</td>
                 <td>Row:6 Cell:5</td>
         </tr>
         <tr>
-                <td>Section 7: The World of CSS Selectors</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-07">Section 7: The World of CSS Selectors</a></td>
                 <td>Section 18: JS Object Literals</td>
                 <td>Section 29: Prototypes, Classes, & OOP</td>
                 <td>Row:7 Cell:4</td><td>Row:7 Cell:5</td>
         </tr>
         <tr>
-                <td>Section 8: The CSS Box Model/td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-08">Section 8: The CSS Box Model</a></td>
                 <td>Section 19: Repeating Stuff with Loops</td>
                 <td>RSection 30: Mastering The Terminal</td>
                 <td>Row:8 Cell:4</td><td>Row:8 Cell:5</td>
