@@ -10,6 +10,13 @@ app.get('/', (req, res) => {
     res.render('home'); // Renders home.ejs file in default "views" DIR
 })
 
+app.get('/cats', (req, res) => {
+    const cats = [
+        'Blue', 'Rocket', 'Monty', 'Tuxedo', 'Oliver'
+    ]
+    res.render('cats.ejs', {allCats: cats })
+})
+
 app.get('/r/:subreddit', (req, res) => {
     const { subreddit } = req.params;
     res.render('subreddit.ejs', { subreddit })
