@@ -15,7 +15,7 @@ app.get('/cats', (req, res) => {
     const cats = [
         'Blue', 'Rocket', 'Monty', 'Tuxedo', 'Oliver'
     ]
-    res.render('cats.ejs', { allCats: cats })
+    res.render('cats.ejs', { allCats: cats })Í
 })
 
 app.get('/r/:subreddit', (req, res) => {
@@ -26,7 +26,6 @@ app.get('/r/:subreddit', (req, res) => {
     } else {
         res.render('notfound', { subreddit })
     }
-
 })
 
 app.get('/rand', (req, res) => {
