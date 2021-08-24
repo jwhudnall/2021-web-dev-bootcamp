@@ -4,6 +4,9 @@ const port = 3000;
 const path = require('path');
 const redditData = require('./data.json')
 
+// app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public'))) // Allows app to be run from alternate directory
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views')); // allows app execution from other DIR
 
@@ -15,7 +18,7 @@ app.get('/cats', (req, res) => {
     const cats = [
         'Blue', 'Rocket', 'Monty', 'Tuxedo', 'Oliver'
     ]
-    res.render('cats.ejs', { allCats: cats })Í
+    res.render('cats.ejs', { allCats: cats })
 })
 
 app.get('/r/:subreddit', (req, res) => {
