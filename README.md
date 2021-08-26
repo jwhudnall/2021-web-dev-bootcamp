@@ -107,32 +107,32 @@ Templating</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-07">Section 7: The World of CSS Selectors</a></td>
-                <td>Section 18: JS Object Literals</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-18">Section 18: JS Object Literals<a/></td>
                 <td>Section 29: Prototypes, Classes, & OOP</td>
                 <td>Row:7 Cell:4</td><td>Row:7 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-08">Section 8: The CSS Box Model</a></td>
-                <td>Section 19: Repeating Stuff with Loops</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-19">Section 19: Repeating Stuff with Loops</a></td>
                 <td>RSection 30: Mastering The Terminal</td>
                 <td>Row:8 Cell:4</td><td>Row:8 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-09">Section 9: Other Assorted Useful CSS Properties<a></td>
-                <td>Section 20: Introducing Functions</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-20">Section 20: Introducing Functions</a></td>
                 <td>Section 31: Our First Brush With Node</td>
                 <td>Row:9 Cell:4</td><td>Row:9 Cell:5</td>
         </tr>        
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-10">Section 10: Responsive CSS & Flexbox</a></td>
-                <td>Section 21: Leveling Up Functions</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-21">Section 21: Leveling Up Functions</a></td>
                 <td>Section 32: Exploring Modules & The NPM
 Universe</td>
                 <td>Row:10 Cell:4</td><td>Row:10 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-11">Section 11: Pricing Panel Project</a></td>
-                <td>Section 22: Callbacks & Array Methods</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-22">Section 22: Callbacks & Array Methods</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-33/FirstApp">Section 33: Creating Servers With Express</a></td>
                 <td>Row:11 Cell:4</td><td>Row:11 Cell:5</td>
         </tr>
