@@ -67,7 +67,7 @@ Section 59: YelpCamp: Deploying -->
         <tr>
                 <td>Section 1: Course Orientation</td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-12">Section 12: CSS Frameworks: Bootstrap</a></td>
-                <td>Section 23: Newer JavaScript Features</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-23">Section 23: Newer JavaScript Features</a></td>
                 <td>Section 34: Creating Dynamic HTML With
 Templating</td>
                 <td>Row:1 Cell:5</td>
@@ -75,27 +75,27 @@ Templating</td>
         <tr>
                 <td>Section 2: An Introduction to Web Development</td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-13">Section 13: OPTIONAL Museum Of Candy Project</a></td>
-                <td>Section 24: Introducing The World Of The DOM</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-24">Section 24: Introducing The World Of The DOM</a></td>
                 <td>Section 35: Defining RESTful Routes</td>
                 <td>Row:2 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-03">Section 3: HTML: The Essentials</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-14">Section 14: Javascript Basics!</a></td>
-                <td>Section 25: The Missing Piece: DOM Events</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-25">Section 25: The Missing Piece: DOM Events</a></td>
                 <td>Section 36: Our First Database: MongoDB</td>
                 <td>Row:3 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-04">Section 4: HTML: Next Steps & Semantics</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-15">Section 15: JS Strings and More</a></td>
-                <td>Section 26: Score Keeper CodeAlong</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-26">Section 26: Score Keeper CodeAlong</a></td>
                 <td>Row:4 Cell:4</td><td>Row:4 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-05">Section 5: HTML: Forms & Tables</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-16">Section 16: JS Decision Making</a></td>
-                <td>Section 27: Async JavaScript: Oh Boy!</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-27">Section 27: Async JavaScript: Oh Boy!</a></td>
                 <td>Row:5 Cell:4</td><td>Row:5 Cell:5</td>
         </tr>        
         <tr>
