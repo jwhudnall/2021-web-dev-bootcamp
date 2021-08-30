@@ -101,14 +101,14 @@ Templating</td>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-06">Section 6: CSS: The Very Basics</a></td>
                 <td>Section 17: JS Arrays</td>
-                <td>Section 28: AJAX and API's</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-28">Section 28: AJAX and API's</a></td>
                 <td>Row:6 Cell:4</td>
                 <td>Row:6 Cell:5</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-07">Section 7: The World of CSS Selectors</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-18">Section 18: JS Object Literals<a/></td>
-                <td>Section 29: Prototypes, Classes, & OOP</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-29">Section 29: Prototypes, Classes, & OOP</a></td>
                 <td>Row:7 Cell:4</td><td>Row:7 Cell:5</td>
         </tr>
         <tr>
@@ -120,14 +120,14 @@ Templating</td>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-09">Section 9: Other Assorted Useful CSS Properties<a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-20">Section 20: Introducing Functions</a></td>
-                <td>Section 31: Our First Brush With Node</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-31">Section 31: Our First Brush With Node</a></td>
                 <td>Row:9 Cell:4</td><td>Row:9 Cell:5</td>
         </tr>        
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-10">Section 10: Responsive CSS & Flexbox</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-21">Section 21: Leveling Up Functions</a></td>
-                <td>Section 32: Exploring Modules & The NPM
-Universe</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-32">Section 32: Exploring Modules & The NPM
+                        Universe</a></td>
                 <td>Row:10 Cell:4</td><td>Row:10 Cell:5</td>
         </tr>
         <tr>
