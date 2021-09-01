@@ -68,8 +68,8 @@ Section 59: YelpCamp: Deploying -->
                 <td>Section 1: Course Orientation</td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-12">Section 12: CSS Frameworks: Bootstrap</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-23">Section 23: Newer JavaScript Features</a></td>
-                <td>Section 34: Creating Dynamic HTML With
-Templating</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-34">Section 34: Creating Dynamic HTML With
+                        Templating</a></td>
                 <td>Row:1 Cell:5</td>
         </tr>        
         <tr>
