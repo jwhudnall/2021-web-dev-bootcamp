@@ -30,6 +30,16 @@ app.get('/comments', (req, res) => {
     res.render('comments/index.ejs', { comments })
 })
 
+app.get('/comments/new', (req, res) => {
+    res.render('comments/new.ejs');
+})
+
+// Add form data to existing "comments" array
+app.post('/comments', (req, res) => {
+    const { username, comment } = req.body;
+    comments.push({username: username, comment: comment})
+    res.send('It worked!')
+})
 app.get('/tacos', (req, res) => {
     res.send('GET /tacos Reponse Here')
 })
