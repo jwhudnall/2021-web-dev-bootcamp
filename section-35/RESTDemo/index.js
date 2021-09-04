@@ -9,18 +9,22 @@ app.set('view engine', 'ejs');
 
 const comments = [
     {
+        id: 1,
         username: 'James',
         comment: 'That is so funny!'
     },
     {
+        id: 2,
         username: 'Samantha',
         comment: 'I love Millie!'
     },
     {
+        id: 3,
         username: 'Tuxedo',
         comment: 'I like fighting with Millie.'
     },
     {
+        id: 4,
         username: 'Millie',
         comment: 'Woof'
     }
@@ -37,9 +41,17 @@ app.get('/comments/new', (req, res) => {
 // Add form data to existing "comments" array
 app.post('/comments', (req, res) => {
     const { username, comment } = req.body;
-    comments.push({username: username, comment: comment})
-    res.send('It worked!')
+    comments.push({ username: username, comment: comment })
+    res.redirect('/comments')
 })
+
+app.get('/comments/:id', (req, res) => {
+    // req.params.id: retrieve id
+    const { id } = req.params;
+    const comment = comments.find(c => c.id === parseInt(id))
+    res.render('comments/show', { comment })
+})
+
 app.get('/tacos', (req, res) => {
     res.send('GET /tacos Reponse Here')
 })
