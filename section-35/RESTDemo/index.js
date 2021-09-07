@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const { v4 : uuidv4 } = require('uuid');
+const { v4: uuidv4 } = require('uuid');
 
 app.use(express.urlencoded({ extended: true })) // Allows reading of URL encoded values
 app.use(express.json()); // Allows reading of JSON files
@@ -51,6 +51,12 @@ app.get('/comments/:id', (req, res) => {
     const { id } = req.params;
     const comment = comments.find(c => c.id === id)
     res.render('comments/show', { comment })
+})
+
+app.get('/comments/:id/edit', (req, res) => {
+    const { id } = req.params;
+    const comment = comments.find(c => c.id === id)
+    res.render('comments/edit', { comment })
 })
 
 app.patch('/comments/:id', (req, res) => {
