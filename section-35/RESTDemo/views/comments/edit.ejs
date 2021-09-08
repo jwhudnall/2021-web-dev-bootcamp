@@ -10,11 +10,11 @@
 
 <body>
     <h1>Edit Comment</h1>
-    <form action="comments/<%=comment.id%>/edit ">
+    <form method="POST" action="/comments/<%=comment.id%>?_method=PATCH">
         <textarea name="comment" id="" cols="30" rows="10">
             <%= comment.comment %> 
         </textarea>
-        <button>Save</button>
+        <button>Update</button>
     </form>
 
 

@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
+const methodOverride = require('method-override')
+
+// override with POST having ?_method=DELETE
+app.use(methodOverride('_method'))
 
 app.use(express.urlencoded({ extended: true })) // Allows reading of URL encoded values
 app.use(express.json()); // Allows reading of JSON files
