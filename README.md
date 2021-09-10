@@ -76,7 +76,7 @@ Section 59: YelpCamp: Deploying -->
                 <td>Section 2: An Introduction to Web Development</td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-13">Section 13: OPTIONAL Museum Of Candy Project</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-24">Section 24: Introducing The World Of The DOM</a></td>
-                <td>Section 35: Defining RESTful Routes</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-35">Section 35: Defining RESTful Routes</a></td>
                 <td>Row:2 Cell:5</td>
         </tr>
         <tr>
