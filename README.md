@@ -1,8 +1,8 @@
 # The Web Developer Bootcamp 2021
-This is a collection of material from Colt Steele's <a href="http://www.udemy.com/course/the-web-developer-bootcamp/">Web Developer Bootcamp</a>.
+This repo is a collection of my coding exercises from Colt Steele's <a href="http://www.udemy.com/course/the-web-developer-bootcamp/">Web Developer Bootcamp</a>.
 
 ## Table of Contents
-<!-- Section 1: Course Orientation
+<!-- Still to be added:
 Section 56: YelpCamp: Fancy Cluster Map
 Section 57: YelpCamp: Styles Clean Up
 Section 58: YelpCamp: Common Security Issues
