@@ -3,10 +3,10 @@ This repo is a collection of my coding exercises from Colt Steele's <a href="htt
 
 ## Table of Contents
 <!-- Still to be added:
-Section 56: YelpCamp: Fancy Cluster Map
-Section 57: YelpCamp: Styles Clean Up
-Section 58: YelpCamp: Common Security Issues
-Section 59: YelpCamp: Deploying -->
+
+
+
+ -->
 
 <table class="tftable" border="1">
         <tr>
@@ -16,6 +16,7 @@ Section 59: YelpCamp: Deploying -->
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-34">Section 34: Creating Dynamic HTML With
                         Templating</a></td>
                 <td>Section 45: Mongo Relationships With Express</td>
+                <td>Section 56: YelpCamp: Fancy Cluster Map</td>
         </tr>        
         <tr>
                 <td>Section 2: An Introduction to Web Development</td>
@@ -23,6 +24,7 @@ Section 59: YelpCamp: Deploying -->
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-24">Section 24: Introducing The World Of The DOM</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-35">Section 35: Defining RESTful Routes</a></td>
                 <td>Section 46: YelpCamp: Adding The Reviews Model</td>
+                <td>Section 57: YelpCamp: Styles Clean Up</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-03">Section 3: HTML: The Essentials</a></td>
@@ -30,6 +32,7 @@ Section 59: YelpCamp: Deploying -->
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-25">Section 25: The Missing Piece: DOM Events</a></td>
                 <td>Section 36: Our First Database: MongoDB</td>
                 <td>Section 47: Express Router & Cookies</td>
+                <td>Section 58: YelpCamp: Common Security Issues</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-04">Section 4: HTML: Next Steps & Semantics</a></td>
@@ -37,6 +40,7 @@ Section 59: YelpCamp: Deploying -->
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-26">Section 26: Score Keeper CodeAlong</a></td>
                 <td>Section 37: Connecting To Mongo With Mongoose</td>
                 <td>Section 48: Express Session & Flash</td>
+                <td>Section 59: YelpCamp: Deploying</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-05">Section 5: HTML: Forms & Tables</a></td>
