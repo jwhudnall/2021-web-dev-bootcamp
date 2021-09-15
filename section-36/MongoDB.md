@@ -16,3 +16,8 @@
 ## Delete
 - db.collection.deleteMany()
 - db.collection.deleteOne()
+  
+## Query Selectors
+- $gt - Greater than
+- $gte - Greater than or equal to
+- $in - Matches anything included in array
