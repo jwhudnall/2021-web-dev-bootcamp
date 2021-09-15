@@ -1,4 +1,9 @@
 # Section 36: MongoDB
+## , Installation, Starting & Stopping MongoDB
+- Installation: `brew install mongodb-community@5.0`
+- Start: `brew services start mongodb-community@5.0`
+- Stop: `brew services stop mongodb-community@5.0`
+
 ## Basic CRUD Operations
 - db.collection.insertOne()
 - show collections
