@@ -12,3 +12,7 @@ Returns a Promise.
 ### Model.findById()
 Finds a single document by its _id field.
 - Return record using ID: `Movie.findById('614461d3a11f29ef1815ab7f').then(data => console.log(data))`
+
+## Updating the DB
+- *.updateOne()* - Update the year of the record containing the specified title: `Movie.updateOne({title: 'Amelie'}, {year: 1999}).then(res => console.log(res))`
+- *.updateMany()* - Update the rating for all movies within an array: `Movie.updateMany({title: {$in: ['Stand By Me', 'Star Wars: A New Hope']}}, {score: 10.0}).then(res => console.log(res))`
