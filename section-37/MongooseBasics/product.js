@@ -40,19 +40,43 @@ const productSchema = new mongoose.Schema({
     }
 })
 
+productSchema.methods.greet = function () {
+    console.log('Tjena from Sweden!');
+    console.log(`${this.name} successfully found in Database.`)
+}
+
+productSchema.methods.toggleOnSale = function() {
+    this.onSale = !this.onSale;
+    return this.save(); // "this" refers to product instance
+}
+
 const Product = mongoose.model('Product', productSchema);
 
-const bike = new Product({ name: 'Cycling Jersey', price: 49.99, categories: ['Cycling', 'Safety'], size: 'Medium' });
+const findProduct = async () => {
+    try {
+        const foundProduct = await Product.findOne({ name: 'Tire Pump' });
+        console.log(foundProduct);
+        await foundProduct.toggleOnSale();
+        console.log(foundProduct);
+    }
+    catch {
+        console.log('Promise unresolved')
+    }
+}
 
-bike.save()
-    .then(data => {
-        console.log('Product Added.');
-        console.log(data);
-    })
-    .catch(err => {
-        console.log('Error!');
-        console.log(err)
-    })
+findProduct();
+
+// const bike = new Product({ name: 'Cycling Jersey', price: 49.99, categories: ['Cycling', 'Safety'], size: 'Medium' });
+
+// bike.save()
+//     .then(data => {
+//         console.log('Product Added.');
+//         console.log(data);
+//     })
+//     .catch(err => {
+//         console.log('Error!');
+//         console.log(err)
+//     })
 
 // Product.findOneAndUpdate({ name: 'Tire Pump' }, { price: -9.99 }, { new: true, runValidators: true })
 //     .then(data => {
