@@ -32,9 +32,14 @@ Finds a single document by its _id field.
     - `Movie.updateOne({title: 'Amelie'}, {year: 1999}).then(res => console.log(res))`
 - *.updateMany()* - Update the rating for all movies within an array:  
     - `Movie.updateMany({title: {$in: ['Stand By Me', 'Star Wars: A New Hope']}}, {score: 10.0}).then(res => console.log(res))`
+- *.findOneAndUpdate()* - Updates a single record. Returns the original version by default.
+    - `Product.findOneAndUpdate({ name: 'Tire Pump' }, { price: -9.99 }, { new: true, runValidators: true })`
 
 ## Deleting
 - *.removeOne()* - Removes the record. 
     - `Movie.remove({title: 'Amelie'}).then(msg => console.log(msg))`
 - *.removeMany()* - Removes all records matching the specified filter.
     - `Movie.deleteMany({year: {$gte: 1999}}).then(msg => console.log(msg))` Deletes all moves produced after 1999 (inclusive)
+
+## Enforcing Validation
+When updating an existing record, must specify `runValidators : true` in option arguments to enforce schema validation. 
