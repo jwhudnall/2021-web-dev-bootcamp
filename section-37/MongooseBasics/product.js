@@ -50,6 +50,11 @@ productSchema.methods.toggleOnSale = function() {
     return this.save(); // "this" refers to product instance
 }
 
+productSchema.methods.addCategory = function(newCat) {
+    this.categories.push(newCat);
+    return this.save();
+}
+
 const Product = mongoose.model('Product', productSchema);
 
 const findProduct = async () => {
@@ -57,6 +62,8 @@ const findProduct = async () => {
         const foundProduct = await Product.findOne({ name: 'Tire Pump' });
         console.log(foundProduct);
         await foundProduct.toggleOnSale();
+        console.log(foundProduct);
+        await foundProduct.addCategory('Accessories'); 
         console.log(foundProduct);
     }
     catch {
