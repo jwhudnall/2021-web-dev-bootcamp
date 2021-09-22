@@ -14,8 +14,17 @@ const personSchema = new mongoose.Schema({
     last: String
 })
 
+// "Getter" exists ONLY in Mongoose; not in DB
 personSchema.virtual('fullName').get(function () {
-    return `${this.first} ${this.last}`; 
+    return `${this.first} ${this.last}`;
+})
+
+personSchema.pre(save, async function () {
+    console.log('About to save...');
+})
+
+personSchema.post(save, async function () {
+    console.log('Progress saved.');
 })
 
 const Person = mongoose.model('Person', personSchema);
