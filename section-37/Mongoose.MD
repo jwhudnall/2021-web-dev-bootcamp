@@ -43,3 +43,15 @@ Finds a single document by its _id field.
 
 ## Enforcing Validation
 When updating an existing record, must specify `runValidators : true` in option arguments to enforce schema validation. 
+
+## Schemas
+Used to construct models.
+- `const personSchema = new mongoose.Schema({`
+    `first: String,`
+    `last: String`
+`})`
+- `const Person = mongoose.model('Person', personSchema);`
+
+### Virtuals
+Document properties that you can get and set but that do not get persisted to MongoDB. The getters are useful for formatting or combining fields, while setters are useful for de-composing a single value into multiple values for storage. <a href='https://mongoosejs.com/docs/guide.html#virtuals'>link</a>
+-`personSchema.virtual('fullName').get(function () {return ``${this.first} ${this.last}``})`
