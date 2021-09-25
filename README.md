@@ -30,7 +30,7 @@ This repo is a collection of my coding exercises from Colt Steele's <a href="htt
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-03">Section 3: HTML: The Essentials</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-14">Section 14: Javascript Basics!</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-25">Section 25: The Missing Piece: DOM Events</a></td>
-                <td>Section 36: Our First Database: MongoDB</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-36">Section 36: Our First Database: MongoDB</a></td>
                 <td>Section 47: Express Router & Cookies</td>
                 <td>Section 58: YelpCamp: Common Security Issues</td>
         </tr>
@@ -38,7 +38,7 @@ This repo is a collection of my coding exercises from Colt Steele's <a href="htt
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-04">Section 4: HTML: Next Steps & Semantics</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-15">Section 15: JS Strings and More</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-26">Section 26: Score Keeper CodeAlong</a></td>
-                <td>Section 37: Connecting To Mongo With Mongoose</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-37">Section 37: Connecting To Mongo With Mongoose<a/></td>
                 <td>Section 48: Express Session & Flash</td>
                 <td>Section 59: YelpCamp: Deploying</td>
         </tr>
