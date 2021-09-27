@@ -25,8 +25,8 @@ app.get('/products', async (req, res) => {
 
 app.get('/products/:id', async (req, res) => {
     const { id } = req.params;
-    const product = await Product.findById(id);
-    res.render('products/show.ejs'), { product };
+    const product = await Product.findById(id)
+    res.render('products/show', { product });
 })
 
 app.listen(3000, () => {
