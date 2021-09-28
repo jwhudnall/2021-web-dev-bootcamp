@@ -46,7 +46,7 @@ This repo is a collection of my coding exercises from Colt Steele's <a href="htt
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-05">Section 5: HTML: Forms & Tables</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-16">Section 16: JS Decision Making</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-27">Section 27: Async JavaScript: Oh Boy!</a></td>
-                <td>Section 38: Putting It All Together: Mongoose With Express</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-38/Mongoose_Express">Section 38: Putting It All Together: Mongoose With Express</a></td>
                 <td>Section 49: YelpCamp: Restructuring & Flash</td>
         </tr>        
         <tr>
