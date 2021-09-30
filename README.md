@@ -1,5 +1,5 @@
 # The Web Developer Bootcamp 2021
-This repo is a collection of my coding exercises from Colt Steele's <a href="http://www.udemy.com/course/the-web-developer-bootcamp/">Web Developer Bootcamp</a>.
+This is a collection of my coding exercises derived from Colt Steele's <a href="http://www.udemy.com/course/the-web-developer-bootcamp/">Web Developer Bootcamp</a>. Individual lessons are linked in the table below, by section.
 
 ## Table of Contents
 <!-- Still to be added:
