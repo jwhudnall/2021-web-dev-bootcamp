@@ -32,7 +32,7 @@ app.get('/products/new', (req, res) => {
 app.post('/products', async (req, res) => {
     const newProduct = new Product(req.body);
     await newProduct.save();
-    console.log(newProduct); 
+    console.log(newProduct);
     res.redirect(`/products/${newProduct._id}`)
 })
 
@@ -40,6 +40,12 @@ app.get('/products/:id', async (req, res) => {
     const { id } = req.params;
     const product = await Product.findById(id)
     res.render('products/show', { product });
+})
+
+app.get('/products/:id/edit', async (req, res) => {
+    const { id } = req.params;
+    const product = await Product.findById(id)
+    res.render('products/edit.ejs', { product });
 })
 
 app.listen(3000, () => {
