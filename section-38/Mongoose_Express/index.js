@@ -2,9 +2,10 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
+const methodOverride = require('method-override');
 
 const Product = require('./models/product');
-const { urlencoded } = require('express');
+const { urlencoded, application } = require('express');
 
 mongoose.connect('mongodb://localhost:27017/farmStand')
     .then(() => {
@@ -17,7 +18,10 @@ mongoose.connect('mongodb://localhost:27017/farmStand')
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+// Middleware:
 app.use(urlencoded({ extended: true }))
+app.use(methodOverride('_method'))
 
 
 app.get('/products', async (req, res) => {
@@ -46,6 +50,11 @@ app.get('/products/:id/edit', async (req, res) => {
     const { id } = req.params;
     const product = await Product.findById(id)
     res.render('products/edit.ejs', { product });
+})
+
+app.put('/products/:id', async (req, res) => {
+    console.log(req.body);
+    res.send('PUT!');
 })
 
 app.listen(3000, () => {
