@@ -28,8 +28,12 @@ const categories = ['fruit', 'vegetable', 'dairy'];
 app.get('/products', async (req, res) => {
     const { category } = req.query;
     if (category) {
+        function capitalize(string) {
+            return string[0].toUpperCase() + string.slice(1);
+        }
+
         const products = await Product.find({ category: category })
-        res.render('products/index.ejs', { products, category })
+        res.render('products/index.ejs', { products, category: capitalize(category) })
     } else {
         const products = await Product.find({});
         res.render('products/index.ejs', { products, category: 'All' })
