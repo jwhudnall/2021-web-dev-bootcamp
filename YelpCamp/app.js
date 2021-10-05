@@ -27,6 +27,14 @@ app.get('/campgrounds', async (req, res) => {
     res.render('campgrounds/index.ejs', { campgrounds })
 })
 
+// Serve new campground form page (GET)
+app.get('/campgrounds/new', (req, res) => {
+    res.render('campgrounds/new.ejs');
+})
+
+// Create route to push form data to DB (POST)
+
+
 app.get('/campgrounds/:id', async (req, res) => {
     // const campgrounds = await Campground.find({});
     const campground = await Campground.findById(req.params.id);
