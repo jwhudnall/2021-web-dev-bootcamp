@@ -2,15 +2,22 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan'); // HTTP request logger middleware for node.js
 
-app.use(morgan('dev'));
+app.use(morgan('tiny'));
+
+
 app.use((req, res, next) => {
-    console.log('This is my first Middleware!');
+    req.requestTime = Date.now();
+    console.log(req.method, req.path, req.requestTime);
     next();
 })
-app.use((req, res, next) => {
-    console.log('This is my SECOND Middleware!');
-    next();
-})
+// app.use((req, res, next) => {
+//     console.log('This is my first Middleware!');
+//     next();
+// })
+// app.use((req, res, next) => {
+//     console.log('This is my SECOND Middleware!');
+//     next();
+// })
 
 app.get('/', (req, res) => {
     res.send('Home!');
