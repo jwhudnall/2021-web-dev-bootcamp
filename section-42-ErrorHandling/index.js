@@ -50,6 +50,15 @@ app.get('/secret', verifyPassword, (req, res) => {
     res.send('My Secret is: swordfish');
 })
 
+app.get('/admin', (req, res) => {
+    throw new AppError('You are not an Admin', 403);
+})
+
+app.use((err, req, res, next) => {
+    const { status = 500, message = 'Something went wrong' } = err;
+    res.status(status).send(message);
+})
+
 app.use((req, res) => {
     res.status(404).send('Not Found');
 })
