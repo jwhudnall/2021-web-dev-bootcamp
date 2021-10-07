@@ -11,6 +11,10 @@ app.use((req, res, next) => {
     next();
 })
 
+app.get('/error', (req, res) => {
+    chicken.fly();
+})
+
 app.use('/dogs', (req, res, next) => {
     console.log('I love dogs');
     next();
@@ -47,6 +51,13 @@ app.get('/secret', verifyPassword, (req, res) => {
 
 app.use((req, res) => {
     res.status(404).send('Not Found');
+})
+
+app.use((err, req, res, next) => {
+    console.log('******************************')
+    console.log('***********ERROR**************')
+    console.log('******************************')
+    next()
 })
 
 app.listen(3000, () => {
