@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const ejsMate = require('ejs-mate');
+const catchAsync = require('./utils/catchAsync');
+const ExpressError = require('./utils/ExpressError');
 const Campground = require('./models/campground');
 const methodOverride = require('method-override');
 
@@ -38,15 +40,11 @@ app.get('/campgrounds/new', (req, res) => {
 })
 
 // Create route to push form data to DB (POST)
-app.post('/campgrounds', async (req, res, next) => {
-    try {
-        const campground = new Campground(req.body.campground); // collects & adds new campground info from form => DB
-        await campground.save();
-        res.redirect(`/campgrounds/${campground._id}`);
-    } catch (e) {
-        next(e);
-    }
-})
+app.post('/campgrounds', catchAsync(async (req, res, next) => {
+    const campground = new Campground(req.body.campground); // collects & adds new campground info from form => DB
+    await campground.save();
+    res.redirect(`/campgrounds/${campground._id}`);
+}))
 
 app.get('/campgrounds/:id', async (req, res) => {
     // const campgrounds = await Campground.find({});
