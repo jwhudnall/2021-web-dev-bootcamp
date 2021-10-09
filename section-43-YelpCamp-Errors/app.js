@@ -25,24 +25,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true })); // tells express to parse incoming requests with urlencoded payload
 app.use(methodOverride('_method')); // define query string parameter
 
-app.get('/', (req, res) => {
-    // res.send('Home Page Here');
-    res.render('home.ejs')
-})
-
-app.get('/campgrounds', catchAsync(async (req, res) => {
-    const campgrounds = await Campground.find({});
-    res.render('campgrounds/index.ejs', { campgrounds })
-}))
-
-// Serve new campground form page (GET)
-app.get('/campgrounds/new', (req, res) => {
-    res.render('campgrounds/new.ejs');
-})
-
-// Create route to push form data to DB (POST)
-app.post('/campgrounds', catchAsync(async (req, res, next) => {
-    // if (!req.body.campground) throw new ExpressError('Invalid Campground Data', 400);
+const validateCampground = (req, res, next) => {
     const campgroundSchema = Joi.object({
         campground: Joi.object({
             title: Joi.string()
@@ -62,8 +45,30 @@ app.post('/campgrounds', catchAsync(async (req, res, next) => {
     if (error) {
         const msg = error.details.map(el => el.message).join(','); // Collect all error messages, separated by a ,
         throw new ExpressError(msg, 400);
+    } else {
+        next();
     }
-    console.log(result);
+}
+
+
+app.get('/', (req, res) => {
+    // res.send('Home Page Here');
+    res.render('home.ejs')
+})
+
+app.get('/campgrounds', catchAsync(async (req, res) => {
+    const campgrounds = await Campground.find({});
+    res.render('campgrounds/index.ejs', { campgrounds })
+}))
+
+// Serve new campground form page (GET)
+app.get('/campgrounds/new', (req, res) => {
+    res.render('campgrounds/new.ejs');
+})
+
+// Create route to push form data to DB (POST)
+app.post('/campgrounds', validateCampground, catchAsync(async (req, res, next) => {
+    // if (!req.body.campground) throw new ExpressError('Invalid Campground Data', 400);
     const campground = new Campground(req.body.campground); // collects & adds new campground info from form => DB
     await campground.save();
     res.redirect(`/campgrounds/${campground._id}`);
@@ -80,7 +85,7 @@ app.get('/campgrounds/:id/edit', catchAsync(async (req, res) => {
     res.render('campgrounds/edit.ejs', { campground })
 }))
 
-app.put('/campgrounds/:id', catchAsync(async (req, res) => {
+app.put('/campgrounds/:id', validateCampground, catchAsync(async (req, res) => {
     const { id } = req.params;
     const campground = await Campground.findByIdAndUpdate(id, { ...req.body.campground })
     res.redirect(`/campgrounds/${campground._id}`);
