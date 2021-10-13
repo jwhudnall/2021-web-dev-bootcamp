@@ -60,7 +60,7 @@ This is a collection of my coding exercises derived from Colt Steele's <a href="
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-07">Section 7: The World of CSS Selectors</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-18">Section 18: JS Object Literals<a/></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-29">Section 29: Prototypes, Classes, & OOP</a></td>
-                <td>Section 40: Middleware: The Key To Express/td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-40-Middleware">Section 40: Middleware: The Key To Express</a></td>
                 <td>Section 51: YelpCamp: Adding In Authentication</td>
         </tr>
         <tr>
@@ -74,7 +74,7 @@ This is a collection of my coding exercises derived from Colt Steele's <a href="
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-09">Section 9: Other Assorted Useful CSS Properties<a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-20">Section 20: Introducing Functions</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-31">Section 31: Our First Brush With Node</a></td>
-                <td>Section 42: Handling Errors In Express Apps</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-42-ErrorHandling">Section 42: Handling Errors In Express Apps</a></td>
                 <td>Section 53: YelpCamp: Controllers & Star Ratings</td>
         </tr>        
         <tr>
