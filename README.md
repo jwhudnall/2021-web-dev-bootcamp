@@ -82,14 +82,14 @@ This is a collection of my coding exercises derived from Colt Steele's <a href="
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-21">Section 21: Leveling Up Functions</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-32">Section 32: Exploring Modules & The NPM
                         Universe</a></td>
-                <td>Section 43: YelpCamp: Errors & Validating Data</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-43-YelpCamp-Errors">Section 43: YelpCamp: Errors & Validating Data</a></td>
                 <td>Section 54: YelpCamp: Image Upload</td>
         </tr>
         <tr>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-11">Section 11: Pricing Panel Project</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-22">Section 22: Callbacks & Array Methods</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-33/FirstApp">Section 33: Creating Servers With Express</a></td>
-                <td>Section 44: Data Relationships With Mongo</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-44-MongoRelationships">Section 44: Data Relationships With Mongo</a></td>
                 <td>Section 55: YelpCamp: Adding Maps</td>
         </tr>
         </table>
