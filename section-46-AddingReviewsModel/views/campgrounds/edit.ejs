@@ -1,0 +1,56 @@
+<% layout('layouts/boilerplate.ejs') %>
+    <div class="row">
+        <h1 class="text-center">Edit Campground</h1>
+        <div class="col-6 offset-3">
+            <form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST" novalidate class="validated-form">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="campground[title]" required
+                        value="<%= campground.title%>">
+                        <div class="invalid-feedback">
+                            Please provide a campground name.
+                          </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location</label>
+                    <input class="form-control" type="text" id="location" name="campground[location]" required
+                        value="<%= campground.location%>">
+                        <div class="invalid-feedback">
+                            Please provide a campground location.
+                          </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="image">Image URL</label>
+                    <input class="form-control" type="text" id="image" name="campground[image]" required
+                        value="<%= campground.image%>">
+                        <div class="invalid-feedback">
+                            Please provide a campground image.
+                          </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="price">Cost/Night</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="price-label">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="price"
+                            placeholder="0.00" aria-describedby="price-label" name="campground[price]" required
+                            value="<%= campground.price%>">
+                            <div class="invalid-feedback">
+                                Please provide a campground cost per night.
+                              </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="description">Description</label>
+                        <textarea class="form-control" id="description"
+                            name="campground[description]" required><%=campground.description%></textarea>
+                            <div class="invalid-feedback">
+                                Please provide a campground description.
+                              </div>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-info">Update Campground</button>
+                    </div>
+            </form>
+            <a href="/campgrounds/<%= campground._id %>">Back to Campground</a>
+        </div>
+    </div>
