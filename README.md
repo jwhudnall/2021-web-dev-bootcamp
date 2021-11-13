@@ -15,7 +15,7 @@ This is a collection of my coding exercises derived from Colt Steele's <a href="
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-23">Section 23: Newer JavaScript Features</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-34">Section 34: Creating Dynamic HTML With
                         Templating</a></td>
-                <td>Section 45: Mongo Relationships With Express</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-45-MongoExpressRelationships/Mongoose_Express">Section 45: Mongo Relationships With Express</a></td>
                 <td>Section 56: YelpCamp: Fancy Cluster Map</td>
         </tr>        
         <tr>
@@ -23,7 +23,7 @@ This is a collection of my coding exercises derived from Colt Steele's <a href="
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-13">Section 13: OPTIONAL Museum Of Candy Project</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-24">Section 24: Introducing The World Of The DOM</a></td>
                 <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-35">Section 35: Defining RESTful Routes</a></td>
-                <td>Section 46: YelpCamp: Adding The Reviews Model</td>
+                <td><a href="https://github.com/jwhudnall/2021-web-dev-bootcamp/tree/main/section-46-AddingReviewsModel">Section 46: YelpCamp: Adding The Reviews Model</a></td>
                 <td>Section 57: YelpCamp: Styles Clean Up</td>
         </tr>
         <tr>
